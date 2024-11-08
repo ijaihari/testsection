@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project section(index)</title>
-     <!-- Google Icons -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
- 
+    <title>Project section</title>
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 
 <body>
@@ -20,54 +20,67 @@
         }
 
         .project-section {
+            background-color: black;
+        }
+
+        .h1 {
+            font-size: 3rem;
+        }
+
+        .project-title {
+            padding-top: 70px;
+            text-align: center;
+            color: white;
+        }
+
+        .project-column {
+            margin: 10px 10px 0px 10px;
             height: auto;
             color: white;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            background-color: black;
             gap: 3%;
-            padding: 3%;
         }
 
         .column {
             width: 400px;
-            height: 400px;
-            margin: 20px;
+            height: 440px;
+            margin: 15px;
             flex-basis: 350px;
             background-color: #000000;
-            border: 3px solid rgba(128, 128, 128, 0.498);
+            border: 3px solid #80808061;
             border-radius: 20px;
             padding: 10px;
-
             display: grid;
-            grid-template-rows: 300px repeat(5, autofit);
+            grid-template-rows: 300px repeat(4, autofit);
             grid-template-columns: auto;
         }
 
         .project-image img {
             border-radius: 10px;
-            border: 3px solid grey;
+            border: 3px solid #80808061;
         }
 
-        .project-title h3 {
+        .project-heading h3 {
             color: white;
+            padding: 3px 0px;
             font-size: 1.3rem;
         }
 
         .project-about {
             color: #a3a3a3;
             text-align: justify;
-            padding: 0.5% 0% 0% 0%;
+            padding: 3px 0px;
         }
 
         .skills-tab {
-            margin: 5px 0px;
+            margin: 7px 0px;
         }
 
         .skills-tab span {
-            margin: 0.5% ;
+            margin: 0px 5px 0px 0px;
             padding: 4px 5px;
             background-color: #262626;
             color: white;
@@ -75,9 +88,15 @@
             border: none;
             border-radius: 5px;
         }
-    
-        .view-links button{
-            margin: 1%;
+
+        .view-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 5px 0px 0px 0px;
+        }
+
+        .view-links button {
             padding: 5px 42px;
             background-color: #ffffff;
             color: black;
@@ -89,156 +108,254 @@
     </style>
 
     <section class="project-section">
-        <!-- Project Title -->
-        <div class="column">
-            <div class="project-image"><img src="project-image.jpg" alt="" width="330px" height="200px"></div>
-            <div class="project-title">
-                <h3 class="h3">Project Title</h3>
-            </div>
-            <div class="duration">
-                <h5 class="h5">April 2024 - May 2024</h5>
-            </div>
-            <div class="project-about">
-                <p class="pro-brief">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum laudantium qui
-                    est recusandae consequatur iure dolores, odit unde iste!</p>
-            </div>
-            <div class="skills-tab">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-            </div>
-            <div class="view-links">
-                <a href=""><button class="webicon">
-                    <i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button></a>
-                <a href=""><button class="giticon">
-                    <i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</button></a>
-            </div>
+        <div class="project-title">
+            <h1 class="h1">PROJECTS</h1>
         </div>
+        <div class="project-column">
+            <!-- Project Column Starts -->
+            <div class="column">
+                <div class="project-image"><img src="project-image.jpg" alt="" width="330px" height="200px"></div>
+                <div class="project-heading">
+                    <h3 class="h3">Project Title</h3>
+                </div>
 
-        <div class="column">
-            <div class="project-image"><img src="project-image.jpg" alt="" width="330px" height="200px"></div>
-            <div class="project-title">
-                <h3 class="h3">Project Title</h3>
-            </div>
-            <div class="duration">
-                <h5 class="h5">April 2024 - May 2024</h5>
-            </div>
-            <div class="project-about">
-                <p class="pro-brief">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum laudantium qui
-                    est recusandae consequatur iure dolores, odit unde iste!</p>
-            </div>
-            <div class="skills-tab">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-            </div>
-            <div class="view-links">
-                <a href=""><button class="webicon">
-                    <i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button></a>
-                <a href=""><button class="giticon">
-                    <i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</button></a>
-            </div>
-        </div>
+                <div class="project-about">
+                    <p class="pro-brief">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum laudantium
+                        quiest recusandae consequatur iure dolores, odit unde iste! est recusandae consequatur iure
+                        dolores, odit unde iste!</p>
+                </div>
+                <div class="skills-tab">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                </div>
+                <div class="view-links">
+                    <div><a href=""><button class="webicon">
+                                <i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button></a>
+                    </div>
+                    <div><a href=""><button class="giticon">
+                                <i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</button></a></div>
+                </div>
+             </div>  
+             <!-- Project Column Ends --> 
 
-        <div class="column">
-            <div class="project-image"><img src="project-image.jpg" alt="" width="330px" height="200px"></div>
-            <div class="project-title">
-                <h3 class="h3">Project Title</h3>
-            </div>
-            <div class="duration">
-                <h5 class="h5">April 2024 - May 2024</h5>
-            </div>
-            <div class="project-about">
-                <p class="pro-brief">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum laudantium qui
-                    est recusandae consequatur iure dolores, odit unde iste!</p>
-            </div>
-            <div class="skills-tab">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-            </div>
-            <div class="view-links">
-                <a href=""><button class="webicon">
-                    <i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button></a>
-                <a href=""><button class="giticon">
-                    <i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</button></a>
-            </div>
-        </div>
+                         <!-- Project Column Starts -->
+            <div class="column">
+                <div class="project-image"><img src="project-image.jpg" alt="" width="330px" height="200px"></div>
+                <div class="project-heading">
+                    <h3 class="h3">Project Title</h3>
+                </div>
 
-        <div class="column">
-            <div class="project-image"><img src="project-image.jpg" alt="" width="330px" height="200px"></div>
-            <div class="project-title">
-                <h3 class="h3">Project Title</h3>
-            </div>
-            <div class="duration">
-                <h5 class="h5">April 2024 - May 2024</h5>
-            </div>
-            <div class="project-about">
-                <p class="pro-brief">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum laudantium qui
-                    est recusandae consequatur iure dolores, odit unde iste!</p>
-            </div>
-            <div class="skills-tab">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-            </div>
-            <div class="view-links">
-                <a href=""><button class="webicon">
-                    <i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button></a>
-                <a href=""><button class="giticon">
-                    <i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</button></a>
-            </div>
-        </div>
+                <div class="project-about">
+                    <p class="pro-brief">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum laudantium
+                        quiest recusandae consequatur iure dolores, odit unde iste! est recusandae consequatur iure
+                        dolores, odit unde iste!</p>
+                </div>
+                <div class="skills-tab">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                </div>
+                <div class="view-links">
+                    <div><a href=""><button class="webicon">
+                                <i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button></a>
+                    </div>
+                    <div><a href=""><button class="giticon">
+                                <i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</button></a></div>
+                </div>
+             </div>  
+             <!-- Project Column Ends --> 
 
-        <div class="column">
-            <div class="project-image"><img src="project-image.jpg" alt="" width="330px" height="200px"></div>
-            <div class="project-title">
-                <h3 class="h3">Project Title</h3>
-            </div>
-            <div class="duration">
-                <h5 class="h5">April 2024 - May 2024</h5>
-            </div>
-            <div class="project-about">
-                <p class="pro-brief">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum laudantium qui
-                    est recusandae consequatur iure dolores, odit unde iste!</p>
-            </div>
-            <div class="skills-tab">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-            </div>
-            <div class="view-links">
-                <a href=""><button class="webicon">
-                    <i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button></a>
-                <a href=""><button class="giticon">
-                    <i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</button></a>
-            </div>
-        </div>
+                         <!-- Project Column Starts -->
+            <div class="column">
+                <div class="project-image"><img src="project-image.jpg" alt="" width="330px" height="200px"></div>
+                <div class="project-heading">
+                    <h3 class="h3">Project Title</h3>
+                </div>
 
-        <div class="column">
-            <div class="project-image"><img src="project-image.jpg" alt="" width="330px" height="200px"></div>
-            <div class="project-title">
-                <h3 class="h3">Project Title</h3>
-            </div>
-            <div class="duration">
-                <h5 class="h5">April 2024 - May 2024</h5>
-            </div>
-            <div class="project-about">
-                <p class="pro-brief">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum laudantium qui
-                    est recusandae consequatur iure dolores, odit unde iste!</p>
-            </div>
-            <div class="skills-tab">
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-            </div>
-            <div class="view-links">
-                <a href=""><button class="webicon">
-                    <i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button></a>
-                <a href=""><button class="giticon">
-                    <i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</button></a>
-            </div>
-        </div>
+                <div class="project-about">
+                    <p class="pro-brief">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum laudantium
+                        quiest recusandae consequatur iure dolores, odit unde iste! est recusandae consequatur iure
+                        dolores, odit unde iste!</p>
+                </div>
+                <div class="skills-tab">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                </div>
+                <div class="view-links">
+                    <div><a href=""><button class="webicon">
+                                <i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button></a>
+                    </div>
+                    <div><a href=""><button class="giticon">
+                                <i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</button></a></div>
+                </div>
+             </div>  
+             <!-- Project Column Ends --> 
+
+                         <!-- Project Column Starts -->
+            <div class="column">
+                <div class="project-image"><img src="project-image.jpg" alt="" width="330px" height="200px"></div>
+                <div class="project-heading">
+                    <h3 class="h3">Project Title</h3>
+                </div>
+
+                <div class="project-about">
+                    <p class="pro-brief">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum laudantium
+                        quiest recusandae consequatur iure dolores, odit unde iste! est recusandae consequatur iure
+                        dolores, odit unde iste!</p>
+                </div>
+                <div class="skills-tab">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                </div>
+                <div class="view-links">
+                    <div><a href=""><button class="webicon">
+                                <i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button></a>
+                    </div>
+                    <div><a href=""><button class="giticon">
+                                <i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</button></a></div>
+                </div>
+             </div>  
+             <!-- Project Column Ends --> 
+
+                         <!-- Project Column Starts -->
+            <div class="column">
+                <div class="project-image"><img src="project-image.jpg" alt="" width="330px" height="200px"></div>
+                <div class="project-heading">
+                    <h3 class="h3">Project Title</h3>
+                </div>
+
+                <div class="project-about">
+                    <p class="pro-brief">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum laudantium
+                        quiest recusandae consequatur iure dolores, odit unde iste! est recusandae consequatur iure
+                        dolores, odit unde iste!</p>
+                </div>
+                <div class="skills-tab">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                </div>
+                <div class="view-links">
+                    <div><a href=""><button class="webicon">
+                                <i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button></a>
+                    </div>
+                    <div><a href=""><button class="giticon">
+                                <i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</button></a></div>
+                </div>
+             </div>  
+             <!-- Project Column Ends --> 
+
+                         <!-- Project Column Starts -->
+            <div class="column">
+                <div class="project-image"><img src="project-image.jpg" alt="" width="330px" height="200px"></div>
+                <div class="project-heading">
+                    <h3 class="h3">Project Title</h3>
+                </div>
+
+                <div class="project-about">
+                    <p class="pro-brief">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum laudantium
+                        quiest recusandae consequatur iure dolores, odit unde iste! est recusandae consequatur iure
+                        dolores, odit unde iste!</p>
+                </div>
+                <div class="skills-tab">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                </div>
+                <div class="view-links">
+                    <div><a href=""><button class="webicon">
+                                <i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button></a>
+                    </div>
+                    <div><a href=""><button class="giticon">
+                                <i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</button></a></div>
+                </div>
+             </div>  
+             <!-- Project Column Ends --> 
+
+                         <!-- Project Column Starts -->
+            <div class="column">
+                <div class="project-image"><img src="project-image.jpg" alt="" width="330px" height="200px"></div>
+                <div class="project-heading">
+                    <h3 class="h3">Project Title</h3>
+                </div>
+
+                <div class="project-about">
+                    <p class="pro-brief">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum laudantium
+                        quiest recusandae consequatur iure dolores, odit unde iste! est recusandae consequatur iure
+                        dolores, odit unde iste!</p>
+                </div>
+                <div class="skills-tab">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                </div>
+                <div class="view-links">
+                    <div><a href=""><button class="webicon">
+                                <i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button></a>
+                    </div>
+                    <div><a href=""><button class="giticon">
+                                <i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</button></a></div>
+                </div>
+             </div>  
+             <!-- Project Column Ends --> 
+
+                         <!-- Project Column Starts -->
+            <div class="column">
+                <div class="project-image"><img src="project-image.jpg" alt="" width="330px" height="200px"></div>
+                <div class="project-heading">
+                    <h3 class="h3">Project Title</h3>
+                </div>
+
+                <div class="project-about">
+                    <p class="pro-brief">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum laudantium
+                        quiest recusandae consequatur iure dolores, odit unde iste! est recusandae consequatur iure
+                        dolores, odit unde iste!</p>
+                </div>
+                <div class="skills-tab">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                </div>
+                <div class="view-links">
+                    <div><a href=""><button class="webicon">
+                                <i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button></a>
+                    </div>
+                    <div><a href=""><button class="giticon">
+                                <i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</button></a></div>
+                </div>
+             </div>  
+             <!-- Project Column Ends --> 
+
+                         <!-- Project Column Starts -->
+            <div class="column">
+                <div class="project-image"><img src="project-image.jpg" alt="" width="330px" height="200px"></div>
+                <div class="project-heading">
+                    <h3 class="h3">Project Title</h3>
+                </div>
+
+                <div class="project-about">
+                    <p class="pro-brief">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum laudantium
+                        quiest recusandae consequatur iure dolores, odit unde iste! est recusandae consequatur iure
+                        dolores, odit unde iste!</p>
+                </div>
+                <div class="skills-tab">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                </div>
+                <div class="view-links">
+                    <div><a href=""><button class="webicon">
+                                <i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button></a>
+                    </div>
+                    <div><a href=""><button class="giticon">
+                                <i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</button></a></div>
+                </div>
+             </div>  
+             <!-- Project Column Ends --> 
+      </div>
+
     </section>
 </body>
 
