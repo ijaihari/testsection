@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <a href="" class="logo">MY PORTFOLIO</a>
         <nav class="navbar">
             <a href="#home">HOME</a>
@@ -30,7 +30,7 @@
             <a href="#achiv">ACHIEVEMENTS</a>
             <a href="#contact">CONTACT</a>
         </nav>
-    </header>
+    </header> -->
     <main>
 
         <!-- Hero Section -->
@@ -60,23 +60,38 @@
                 <p class="sub-title">Here are the few more information about me</p>
             </div>
             <div class="about-container">
-                <div class="profile-left">
-                    <div class="proimg"><img src="profile.jpg" alt="" width="80px" height="80px"></div>
-                    <div class="availstatus">
-                        <p class="para"><span class="availtohire"><strong>Status:&nbsp;&nbsp;Open to
-                                    Work</strong></span><br>
-                            <span class="availability"><strong>Availability:&nbsp;&nbsp;<span
-                                        class="now">Immediate</span></strong></span>
-                        </p>
+                <div class="profile-section">
+                    <div class="profile-left">
+                        <div class="proimg"><img src="profile.jpg" alt="" width="80px" height="80px"></div>
+                        <div class="availstatus">
+                            <p class="para"><span class="availtohire"><strong>Status:&nbsp;&nbsp;Open to
+                                        Work</strong></span><br>
+                                <span class="availability"><strong>Availability:&nbsp;&nbsp;<span
+                                            class="now">Immediate</span></strong></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="count-section">
+                        <section class="count-sub-section">
+                            <h2>10+</h2>
+                            <p>Projects done so far</p>
+                        </section>
+                        <hr>
+                        <section class="count-sub-section">
+                            <h2>Fresher</h2>
+                            <p>Years of Experience</p>
+                        </section>
                     </div>
                 </div>
+    
+    
                 <div class="aboutme-right">
                     <h2 class="h2">EDUCATION</h2>
                     <section class="edu">
                         <li class="deg">Bachelor of Engineering EEE&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">CGPA:
                                 8.81</span></li>
                         <p class="class">AAA College of Engineering & Technology&nbsp;&nbsp;|&nbsp;&nbsp;2024</p>
-
+    
                         <span class="college-activities">
                             <h3 class="h3">Activities</h3>
                             <li class="act-list">Student Representative (2021-2024)</li>
@@ -84,13 +99,13 @@
                             <li class="act-list">President of Department Association (2023-2024)</li>
                         </span>
                     </section>
-
+    
                     <section class="edu">
                         <li class="deg">12<sup>th</sup> Grade&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">66.65%</span>
                         </li>
                         <p class="class">SHNV Matriculation Higher Secondary School&nbsp;&nbsp;|&nbsp;&nbsp;2020</p>
                     </section>
-
+    
                     <section class="edu">
                         <li class="deg">10<sup>th</sup> Grade&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">90.0%</span>
                         </li>
@@ -98,9 +113,79 @@
                     </section>
                 </div>
             </div>
-
+    
         </section>
 
+        <!-- Skills Section -->
+        <section class="skill-section" id="skills">
+            <div class="skills-title">
+                <h1>SKILLS</h1>
+                <p class="sub-title">Here are the technologies and tools I use to create responsive, high-performing
+                    websites & applications</p>
+            </div>
+            <div class="skills-list">
+                <h3>IN FRONT END</h3>
+    
+                <div class="tech-top">
+                    <div class="tech">
+                        <div class="tech-img"><img src="skill-svg/html-icon.svg" alt=""></div>
+                        <div>
+                            <p class="s-note"><strong>HTML</strong></p>
+                            <p class="ab-note">Website Structure</p>
+                        </div>
+                    </div>
+    
+                    <div class="tech">
+                        <div class="tech-img"><img src="skill-svg/css-icon.svg" alt=""></div>
+                        <div>
+                            <p class="tech-note"><strong>CSS</strong></p>
+                            <p class="ab-note">User Interface</p>
+                        </div>
+                    </div>
+    
+                    <div class="tech">
+                        <div class="tech-img"><img src="skill-svg/javascript-icon.svg" alt=""></div>
+                        <div>
+                            <p class="tech-note"><strong>JavaScript</strong></p>
+                            <p class="ab-note">Interactive</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <h3>IN FRAMEWORKS</h3>
+    
+                <div class="tech-top">
+                    <div class="tech">
+                        <div class="tech-img"><img src="skill-svg/react-js-icon.svg" alt=""></div>
+                        <div>
+                            <p class="s-note"><strong>React</strong></p>
+                            <p class="ab-note">User Interface</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <h3>IN BACK END</h3>
+    
+                <div class="tech-top">
+                    <div class="tech">
+                        <div class="tech-img"><img src="skill-svg/node-js-icon.svg" alt=""></div>
+                        <div>
+                            <p class="s-note"><strong>Node JS</strong></p>
+                            <p class="ab-note">Back End Logics</p>
+                        </div>
+                    </div>
+
+                    <div class="tech">
+                        <div class="tech-img"><img src="skill-svg/mysql-icon.svg" alt=""></div>
+                        <div>
+                            <p class="s-note"><strong>My SQL</strong></p>
+                            <p class="ab-note">DataBase</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
 
         <!-- Project Section -->
 
@@ -391,7 +476,6 @@
                     
                 </div>
 
-
                 <div class="col-right">
                     <div>
                         <h2 class="h2">Connect with me</h2>
@@ -406,11 +490,10 @@
                             <br>
                             <label class="label" for="yourmessage">Message</label> <br>
                             <textarea class="txtarea" name="yourmessage" id="yourname" placeholder="Write your message"
-                                rows="7" cols="45" required></textarea>
+                                rows="7" cols="40" required></textarea>
                             <br>
                             <button class="submitbtn" type="submit">Send</button>
                         </form>
-
                     </div>
                 </div>
             </div>

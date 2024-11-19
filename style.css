@@ -70,7 +70,7 @@ body a {
 .jtag {
   padding: 10px;
   flex-basis: 500px;
- /*  filter: drop-shadow(2px 2px 20px white); */
+  /*  filter: drop-shadow(2px 2px 20px white); */
 }
 
 .greet {
@@ -93,6 +93,7 @@ body a {
 .note {
   font-size: 1.3rem;
   margin-bottom: 5%;
+  color: #c5c5c5;
 }
 
 .intro button {
@@ -103,32 +104,23 @@ body a {
 .github-button,
 .resume-button {
   padding: 10px 20px;
-  background-color: black;
-  color: white;
   font-size: 1.2rem;
   font-weight: bold;
-  border: 2px solid rgba(128, 128, 128, 0.267);
-  border-radius: 50px;
+  border-radius: 100px;
+  color: white;
+  background-color: #000000;
+  border: 2px solid #8131ea36;
 }
 
-.resume-button:hover {
-  cursor: pointer;
-  background-color: darkorange;
-  border-color: darkorange;
-}
-
-.linkedin-button:hover {
-  cursor: pointer;
-  background-color: #036eb0;
-  border-color: #036eb0;
-}
-
+.resume-button:hover,
+.linkedin-button:hover,
 .github-button:hover {
   cursor: pointer;
-  background-color: darkviolet;
-  border-color: darkviolet;
+  box-shadow: 0.2px 0px 10px #8131ea90;
+  transition: 0.1s ease-out;
 }
 
+/*=== About Section ===*/
 /*=== About Section ===*/
 .about {
   height: auto;
@@ -143,6 +135,7 @@ body a {
 .about-title h1 {
   font-size: 3rem;
   color: white;
+  text-align: center;
 }
 
 .sub-title {
@@ -161,16 +154,23 @@ body a {
   gap: 5%;
 }
 
+.profile-section {
+  flex-basis: 340px;
+}
+
 .profile-left {
-  flex-basis: 400px;
   height: fit-content;
-  padding: 0.5%;
-  border-radius: 25px;
-  margin: 2% 2%;
+  border-radius: 20px;
+  margin: 12% 0% 5% 0%;
   background-color: #ffffff07;
   /*  border: 3px solid rgba(128, 128, 128, 0.171); */
   box-shadow: 1px 1px 2px #ffffff2b, -1px -1px 2px #ffffff2b;
   color: white;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .aboutme-right {
@@ -178,7 +178,6 @@ body a {
   height: fit-content;
   padding: 1%;
   margin: 2% 7%;
-
 }
 
 .aboutme-right h2 {
@@ -189,17 +188,7 @@ body a {
   -webkit-text-fill-color: transparent;
 }
 
-
-
-.profile-left {
-  display: grid;
-  grid-template-columns: 80px auto;
-  justify-content: center;
-  align-items: center;
-}
-
 .proimg img {
-  margin: 2px;
   padding: 2px;
   border-radius: 100px;
 }
@@ -215,6 +204,32 @@ body a {
   border-radius: 10px;
   background-color: #00ff66bd;
   color: white;
+}
+
+.count-section {
+  width: 340px;
+  background-color: #ffffff07;
+  border-radius: 20px;
+  margin: 2% 2%;
+  padding: 20px 15px;
+  box-shadow: 1px 1px 2px #ffffff2b, -1px -1px 2px #ffffff2b;
+  display: flex;
+  justify-content: space-between;
+}
+
+.count-sub-section {
+  text-align: center;
+  line-height: 1.3;
+}
+
+.count-sub-section h2 {
+  font-size: 1.7rem;
+  color: white;
+}
+
+.count-sub-section p {
+  color: grey;
+  font-size: 1rem;
 }
 
 .edu {
@@ -259,6 +274,82 @@ body a {
 }
 
 /*=== Skills Section ===*/
+
+
+.skill-section {
+  height: auto;
+  background-color: black;
+  padding: 10px;
+}
+
+.skills-title h1 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.sub-title {
+  padding: 10px 10px;
+  font-size: 1rem;
+  text-align: center;
+  color: orange;
+}
+
+.skills-list {
+  width: auto;
+  /*  border: 2px solid white; */
+  margin: 2% 7%;
+
+}
+
+.skills-list h3 {
+  padding: 10px 0px;
+  font-size: 1.5rem;
+  background-image: linear-gradient(to bottom right, blue, violet);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tech-top {
+  width: auto;
+  /*  border: 2px solid white; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-around;   for phone */
+
+}
+
+.tech {
+  min-width: 300px;
+  margin: 1% 1% 1% 1%;
+  border-radius: 15px;
+  border: 2px solid rgba(48, 48, 48, 0.518);
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.tech-img {
+  width: 80px;
+  padding: 10px 15px;
+}
+
+.tech strong {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.tech p {
+  padding: 2px 30px;
+}
+
+.ab-note {
+  color: grey;
+}
 
 /* ===Projects=== */
 .project-section {
@@ -443,7 +534,7 @@ body a {
 }
 
 .user-input {
-  width: 210px;
+  width: 232px;
   height: 30px;
   margin: 5px 0px;
   padding: 3px 5px;
