@@ -9,17 +9,28 @@ html {
   font-family: "Roboto Slab", serif;
 }
 
+:root {
+  /* === Font Color === */
+  --grey: #b4b4b4;
+  --white: #e3e2df;
+  --red: #ff0000;
+  --black: #000000;
+}
+
+
+
 body a {
   text-decoration: none;
 }
 
 /* === Navigation Bar === */
+
 .header {
   position: fixed;
   inset: 0px 0px;
   height: fit-content;
   padding: 15px 100px;
-  background-color: #000000;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,8 +67,7 @@ body a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  color: white;
-  background-color: #000000;
+  background-color: var(--black);
   gap: 5%;
   padding: 6.3% 0%;
 }
@@ -70,30 +80,31 @@ body a {
 .jtag {
   padding: 10px;
   flex-basis: 500px;
-  /*  filter: drop-shadow(2px 2px 20px white); */
 }
 
 .greet {
   font-size: 3rem;
-  margin-bottom: 1%;
-  color: transparent;
-  -webkit-text-stroke: 1px white;
+  margin-bottom: 0.5%;
+  color: white;
 }
 
 .name {
   font-size: 4.5rem;
   margin-bottom: 1%;
-
   background-image: linear-gradient(to bottom right, blue, violet);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.note {
+.role{
   font-size: 1.3rem;
+  color: white;
+  margin-bottom: 1%;
+}
+.note {
+  font-size: 1.1rem;
   margin-bottom: 5%;
-  color: #c5c5c5;
+  color: grey;
 }
 
 .intro button {
@@ -109,7 +120,7 @@ body a {
   border-radius: 100px;
   color: white;
   background-color: #000000;
-  border: 2px solid #8131ea36;
+  border: 2px solid rgba(128, 128, 128, 0.149);
 }
 
 .resume-button:hover,
@@ -121,7 +132,7 @@ body a {
 }
 
 /*=== About Section ===*/
-/*=== About Section ===*/
+
 .about {
   height: auto;
   background-color: black;
@@ -249,7 +260,6 @@ body a {
   font-size: 1.2rem;
 }
 
-
 .mark {
   background-image: linear-gradient(to bottom right, blue, violet);
   background-clip: text;
@@ -275,7 +285,6 @@ body a {
 
 /*=== Skills Section ===*/
 
-
 .skill-section {
   height: auto;
   background-color: black;
@@ -300,7 +309,6 @@ body a {
   width: auto;
   /*  border: 2px solid white; */
   margin: 2% 7%;
-
 }
 
 .skills-list h3 {
@@ -319,7 +327,6 @@ body a {
   flex-direction: row;
   flex-wrap: wrap;
   /* justify-content: space-around;   for phone */
-
 }
 
 .tech {
@@ -352,6 +359,7 @@ body a {
 }
 
 /* ===Projects=== */
+
 .project-section {
   background-color: black;
 }
@@ -482,7 +490,6 @@ body a {
   padding: 2% 2%;
 }
 
-
 .label {
   color: white;
 }
@@ -569,13 +576,12 @@ textarea {
   border: 2px solid black;
 }
 
-
-
 /* ===Footer=== */
 
-.contact .footer {
+footer {
+  background-color: whitesmoke;
   padding: 10px 0px;
-  color: white;
+  color: black;
   text-align: center;
   font-weight: bold;
 }
