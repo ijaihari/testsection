@@ -96,11 +96,13 @@ body a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.role{
+
+.role {
   font-size: 1.3rem;
   color: white;
   margin-bottom: 1%;
 }
+
 .note {
   font-size: 1.1rem;
   margin-bottom: 5%;
@@ -219,8 +221,7 @@ body a {
 
 .count-section {
   width: 350px;
-  background: linear-gradient(360deg, hsla(270, 94%, 25%, 1) 0%, hsla(158, 94%, 49%, 1) 100%);
-  /* background-image: linear-gradient(to bottom, #11998e, #38ef7d); */
+  background-image: linear-gradient(to bottom, #11998e, #38ef7d);
   border-radius: 20px;
   margin: 2% 0%;
   padding: 20px 10px;
@@ -239,7 +240,7 @@ body a {
 }
 
 .count-sub-section p {
-  color:rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.9rem;
 }
 
