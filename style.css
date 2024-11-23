@@ -212,20 +212,20 @@ body a {
 
 .now {
   padding: 2px 7px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #00ff66bd;
   color: white;
 }
 
 .count-section {
-  width: 340px;
-  background-color: #ffffff07;
+  width: 350px;
+  background: linear-gradient(360deg, hsla(270, 94%, 25%, 1) 0%, hsla(158, 94%, 49%, 1) 100%);
+  /* background-image: linear-gradient(to bottom, #11998e, #38ef7d); */
   border-radius: 20px;
-  margin: 2% 2%;
-  padding: 20px 15px;
-  box-shadow: 1px 1px 2px #ffffff2b, -1px -1px 2px #ffffff2b;
+  margin: 2% 0%;
+  padding: 20px 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .count-sub-section {
@@ -239,8 +239,8 @@ body a {
 }
 
 .count-sub-section p {
-  color: grey;
-  font-size: 1rem;
+  color:rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
 }
 
 .edu {
