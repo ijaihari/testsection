@@ -6,7 +6,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto Slab", serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -16,8 +16,6 @@ html {
   --red: #ff0000;
   --black: #000000;
 }
-
-
 
 body a {
   text-decoration: none;
@@ -30,7 +28,7 @@ body a {
   inset: 0px 0px;
   height: fit-content;
   padding: 15px 100px;
-  background-color: white;
+  background-color:black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -456,6 +454,7 @@ hr{
   border: none;
   border-radius: 5px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /*=== Contact Me ===*/
@@ -468,7 +467,7 @@ hr{
 }
 
 .contact-title h1 {
-  padding: 50px 0px 0px 0px;
+  padding: 70px 0px 0px 0px;
   text-align: center;
   color: white;
 }
