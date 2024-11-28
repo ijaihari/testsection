@@ -31,7 +31,7 @@ body a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 5px solid #6821ec85;
+  border-bottom: 5px solid #300dbb;
   z-index: 99;
 }
 .logo {
@@ -44,7 +44,7 @@ body a {
   color: #ffffff;
   margin-left: 50px;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .navbar a:hover {
   cursor: pointer;
@@ -58,7 +58,6 @@ body a {
   font-size: 2rem;
   display: none;
 }
-
 
 /*=== Home Section ===*/
 
@@ -84,14 +83,14 @@ body a {
 }
 
 .greet {
-  font-size: 3rem;
+  font-size: 2.7rem;
   margin-bottom: 0.5%;
   color: white;
   font-family: "Courier New", Courier, monospace;
 }
 
 .name {
-  font-size: 4.5rem;
+  font-size: 3.7rem;
   margin-bottom: 1%;
   background-image: linear-gradient(to bottom right, blue, violet);
   background-clip: text;
@@ -501,7 +500,8 @@ hr {
 
 .col-left,
 .col-right {
-  flex-basis: auto;
+  flex-basis: 330px;
+  height: fit-content;
   margin: 2% 3%;
   padding: 2% 2%;
 }
@@ -545,7 +545,7 @@ hr {
 .contact-links {
   list-style: none;
   font-size: 1.3rem;
-  padding: 0px 0px 15px 0px;
+  padding: 0px 0px 10px 0px;
   color: white;
 }
 
@@ -561,14 +561,16 @@ hr {
   height: 30px;
   margin: 5px 0px;
   padding: 3px 5px;
+  outline: none;
 }
 
 input,
 textarea {
   background-color: #000000;
   border: 1px solid grey;
-  color: whitesmoke;
+  color:white;
   border-radius: 5px;
+  outline: none;
 }
 
 .txtarea {
@@ -581,7 +583,7 @@ textarea {
   font-size: 1rem;
   color: white;
   background-color: #000000;
-  border: 2px solid white;
+  border: 1px solid rgb(128, 128, 128);
   border-radius: 5px;
   cursor: pointer;
 }
@@ -595,25 +597,28 @@ textarea {
 /* ===Footer=== */
 
 footer {
-  background-color: whitesmoke;
-  padding: 10px 0px;
-  color: black;
+  background-color: #300dbb;
+  padding: 7px 0px;
+  color: white;
   text-align: center;
   font-weight: bold;
 }
+/* ================= Media Query for 950px ================= */
 
 @media (max-width: 950px) {
   .header {
     padding: 10px 30px;
   }
 }
+/* ================= Media Query for 950px ================= */
+
 @media (max-width: 950px) {
   #menu-icon {
     display: block;
   }
-  .header{
+  .header {
     background-color: rgb(48, 13, 187);
-    border: none;
+    border-bottom: 3.5px solid white;
   }
 
   .navbar {
@@ -633,5 +638,42 @@ footer {
   }
   .navbar.active {
     display: block;
+  }
+}
+/* ================= Media Query for 450px ================= */
+
+@media (max-width: 450px) {
+  /*====== Contact ======*/
+  .h1 {
+    font-size: 2rem;
+  }
+  .sub-title {
+    font-size: 0.7rem;
+  }
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+  .contact-links {
+    font-size: 1rem;
+  }
+  .col-left,
+  .col-right {
+    margin: 7px 5px;
+    padding: 10px 10px;
+  }
+  .label {
+    font-size: 1rem;
+    width: 50px;
+  }
+  .user-input {
+    width: 250px;
+  }
+  .submitbtn {
+    font-size: 1rem;
+  }
+
+  /*====== Footer ======*/
+  .footer {
+    font-size: 0.7rem;
   }
 }
