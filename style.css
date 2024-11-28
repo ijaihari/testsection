@@ -147,12 +147,6 @@ body a {
   text-align: center;
 }
 
-.about-title h1 {
-  font-size: 3rem;
-  color: white;
-  text-align: center;
-}
-
 .sub-title {
   padding: 10px 0px;
   font-size: 1rem;
@@ -192,7 +186,7 @@ body a {
   flex-basis: 600px;
   height: fit-content;
   padding: 1%;
-  margin: 2% 7%;
+  margin: 2% 0% 2% 12%;
 }
 
 .aboutme-right h2 {
@@ -262,7 +256,7 @@ hr {
 
 .class {
   color: grey;
-  padding: 5px 30px;
+  padding: 5px 0px;
   font-size: 1.2rem;
 }
 
@@ -272,6 +266,7 @@ hr {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-radius: 8px;
+  font-size: 1.5rem;
 }
 
 .college-activities {
@@ -280,12 +275,12 @@ hr {
 
 .act-list {
   font-size: 1.3rem;
-  padding: 5px 30px;
+  padding: 5px 0px;
 }
 
-.edu h3 {
+.h3 {
   font-size: 1.3rem;
-  padding: 5px 30px;
+  padding: 5px 0px;
   color: white;
 }
 
@@ -295,13 +290,6 @@ hr {
   height: auto;
   background-color: black;
   padding: 10px;
-}
-
-.skills-title h1 {
-  font-size: 3rem;
-  color: white;
-  text-align: center;
-  padding-top: 70px;
 }
 
 .sub-title {
@@ -315,15 +303,6 @@ hr {
   width: auto;
   /*  border: 2px solid white; */
   margin: 2% 7%;
-}
-
-.skills-list h3 {
-  padding: 10px 0px;
-  font-size: 1.5rem;
-  background-image: linear-gradient(to bottom right, blue, violet);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .tech-top {
@@ -375,6 +354,8 @@ hr {
 
 .h1 {
   font-size: 3rem;
+  color: white;
+  text-align: center;
 }
 
 .project-title h1 {
@@ -383,12 +364,7 @@ hr {
   color: white;
 }
 
-.project-title p {
-  padding: 10px 0px;
-  font-size: 1rem;
-  text-align: center;
-  color: orange;
-}
+
 
 .project-column {
   margin: 10px 10px 0px 10px;
@@ -510,11 +486,7 @@ hr {
   color: white;
 }
 
-.h1 {
-  font-size: 3rem;
-}
-
-.contact h2 {
+.h2 {
   font-size: 2rem;
   padding: 5px 0px;
   background-image: linear-gradient(to bottom right, blue, violet);
@@ -646,6 +618,20 @@ footer {
 /* ================= Media Query for 450px ================= */
 
 @media (max-width: 450px) {
+  /*====== About =======*/
+  .deg{
+    font-size: 1.12rem;
+  }
+  .class,.h3,.act-list{
+    font-size: 1rem;
+  }
+  .mark{
+    font-size: 1.12rem;
+  }
+  .aboutme-right {
+    margin: 2% 4% 2% 4%;
+  }
+
   /*====== Contact ======*/
   .h1 {
     font-size: 2rem;
@@ -653,8 +639,8 @@ footer {
   .sub-title {
     font-size: 0.7rem;
   }
-  .contact h2 {
-    font-size: 1.5rem;
+  .h2 {
+    font-size: 1.3rem;
   }
   .contact-links {
     font-size: 1rem;
