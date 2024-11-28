@@ -86,7 +86,6 @@ body a {
   font-size: 2.7rem;
   margin-bottom: 0.5%;
   color: white;
-  font-family: "Courier New", Courier, monospace;
 }
 
 .name {
@@ -111,7 +110,7 @@ body a {
 }
 
 .intro button {
-  margin: 1% 1.5% 3% 0;
+  margin: 1% 0% 3% 0;
 }
 
 .linkedin-button,
@@ -576,13 +575,7 @@ footer {
   text-align: center;
   font-weight: bold;
 }
-/* ================= Media Query for 950px ================= */
 
-@media (max-width: 950px) {
-  .header {
-    padding: 10px 30px;
-  }
-}
 /* ================= Media Query for 950px ================= */
 
 @media (max-width: 950px) {
@@ -590,8 +583,9 @@ footer {
     display: block;
   }
   .header {
-    background-color: rgb(48, 13, 187);
-    border-bottom: 2px solid white;
+    background-image:linear-gradient(to bottom right, #0505a7, rgb(134, 7, 188));
+    border-bottom: none;
+    padding: 10px 30px;
   }
   .navbar {
     position: absolute;
@@ -600,7 +594,7 @@ footer {
     left: 0;
     width: 100%;
     padding: 10px 35px;
-    background-color: whitesmoke;
+    background-color:white;
   }
   .navbar a {
     display: block;
@@ -611,13 +605,39 @@ footer {
   .navbar.active {
     display: block;
   }
-  .navbar a:active{
+  .navbar a:active {
     color: #a3a3a3;
   }
 }
 /* ================= Media Query for 450px ================= */
 
 @media (max-width: 450px) {
+  /*====== Home  ======*/
+  .intro {
+    flex-basis: 700px;
+    margin: 160px 30px 30px 30px;
+  }
+  .greet {
+    font-size: 2rem;
+    color: transparent;
+   -webkit-text-stroke:0.7px white ;
+
+    }
+  .name {
+    font-size: 2.7rem;
+    margin-bottom: 10px;
+  }
+  .note ,.role{
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+  .linkedin-button,
+  .github-button,
+  .resume-button {
+    padding: 7px 12px;
+    font-size: 1rem;
+  }
   /*====== About =======*/
   .deg {
     font-size: 1.12rem;
