@@ -501,7 +501,7 @@ hr {
 .col-left,
 .col-right {
   flex-basis: 330px;
-  height: fit-content;
+  height: auto;
   margin: 2% 3%;
   padding: 2% 2%;
 }
