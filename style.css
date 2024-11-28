@@ -300,7 +300,6 @@ hr {
 
 .skills-list {
   width: auto;
-  /*  border: 2px solid white; */
   margin: 2% 7%;
 }
 
@@ -314,7 +313,7 @@ hr {
 }
 
 .tech {
-  min-width: 290px;
+  width: 290px;
   height: 90px;
   margin: 1.5% 1.5% 1.5% 0%;
   background-color: #ffffff07;
@@ -332,7 +331,7 @@ hr {
   padding: 10px 15px;
 }
 
-.tech strong {
+.s-note {
   font-size: 1.3rem;
   color: white;
 }
@@ -614,7 +613,6 @@ footer {
   }
 }
 
-
 /* ================= Media Query for 450px ================= */
 
 @media (max-width: 450px) {
@@ -628,7 +626,7 @@ footer {
     color: transparent;
     -webkit-text-stroke: 0.7px white;
   }
-  
+
   .name {
     font-size: 2.7rem;
     margin-bottom: 10px;
@@ -646,6 +644,15 @@ footer {
     font-size: 1rem;
   }
   /*====== About =======*/
+  
+  .availstatus {
+    padding: 5px 5px 5px 15px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+.count-sub-section h2{
+  font-size: 1.5rem;
+}
   .deg {
     font-size: 1.12rem;
   }
@@ -661,7 +668,21 @@ footer {
     margin: 2% 4% 2% 4%;
   }
 
+  /*====== Skills =======*/
+  .tech {
+    height: 80px;
+  }
+  .tech p {
+    padding: 2px 40px;
+  }
+  
+  .s-note,
+  .ab-note {
+    font-size: 1rem;
+  }
+
   /*====== Contact ======*/
+
   .h1 {
     font-size: 2rem;
   }
@@ -695,10 +716,9 @@ footer {
     font-size: 0.7rem;
   }
 }
-@media (max-width: 370px){
+@media (max-width: 370px) {
   .jtag img {
     padding: 0px 30px;
     height: 280px;
   }
-  
 }
