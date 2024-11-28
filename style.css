@@ -364,8 +364,6 @@ hr {
   color: white;
 }
 
-
-
 .project-column {
   margin: 10px 10px 0px 10px;
   height: auto;
@@ -540,9 +538,9 @@ input,
 textarea {
   background-color: #000000;
   border: 1px solid grey;
-  color:white;
+  color: white;
   border-radius: 5px;
- resize: none;
+  resize: none;
   outline: none;
 }
 
@@ -593,9 +591,8 @@ footer {
   }
   .header {
     background-color: rgb(48, 13, 187);
-    border-bottom: 3.5px solid white;
+    border-bottom: 2px solid white;
   }
-
   .navbar {
     position: absolute;
     display: none;
@@ -614,18 +611,23 @@ footer {
   .navbar.active {
     display: block;
   }
+  .navbar a:active{
+    color: #a3a3a3;
+  }
 }
 /* ================= Media Query for 450px ================= */
 
 @media (max-width: 450px) {
   /*====== About =======*/
-  .deg{
+  .deg {
     font-size: 1.12rem;
   }
-  .class,.h3,.act-list{
+  .class,
+  .h3,
+  .act-list {
     font-size: 1rem;
   }
-  .mark{
+  .mark {
     font-size: 1.12rem;
   }
   .aboutme-right {
