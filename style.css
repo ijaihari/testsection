@@ -583,7 +583,11 @@ footer {
     display: block;
   }
   .header {
-    background-image:linear-gradient(to bottom right, #0505a7, rgb(134, 7, 188));
+    background-image: linear-gradient(
+      to bottom right,
+      #0505a7,
+      rgb(134, 7, 188)
+    );
     border-bottom: none;
     padding: 10px 30px;
   }
@@ -594,7 +598,7 @@ footer {
     left: 0;
     width: 100%;
     padding: 10px 35px;
-    background-color:white;
+    background-color: white;
   }
   .navbar a {
     display: block;
@@ -615,19 +619,23 @@ footer {
   /*====== Home  ======*/
   .intro {
     flex-basis: 700px;
-    margin: 160px 30px 160px 30px;
+    margin: 160px 30px 30px 30px;
   }
   .greet {
     font-size: 2rem;
     color: transparent;
-   -webkit-text-stroke:0.7px white ;
-
-    }
+    -webkit-text-stroke: 0.7px white;
+  }
+  .jtag img {
+    padding: 0px 30px;
+    height: 280px;
+  }
   .name {
     font-size: 2.7rem;
     margin-bottom: 10px;
   }
-  .note ,.role{
+  .note,
+  .role {
     font-size: 1rem;
     text-align: justify;
     margin-bottom: 30px;
