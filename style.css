@@ -615,7 +615,7 @@ footer {
   /*====== Home  ======*/
   .intro {
     flex-basis: 700px;
-    margin: 160px 30px 30px 30px;
+    margin: 160px 30px 100px 30px;
   }
   .greet {
     font-size: 2rem;
