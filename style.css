@@ -398,6 +398,7 @@ hr {
 }
 
 .pro-brief {
+  font-size: 1rem;
   color: #a3a3a3;
   text-align: justify;
   margin: 3px 15px;
@@ -487,7 +488,7 @@ hr {
 .h2 {
   font-size: 2rem;
   padding: 5px 0px;
-  background-image: linear-gradient(to bottom right, blue, violet);
+  background-image: linear-gradient(to bottom right, rgb(0, 68, 255), violet);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -541,6 +542,7 @@ textarea {
   color: white;
   border-radius: 5px;
   outline: none;
+  resize: none;
 }
 
 .txtarea {
@@ -735,12 +737,20 @@ footer {
   .submitbtn {
     font-size: 1rem;
   }
-
+  /*====== Projects ======*/
+  .pro-title{
+    font-size: 1.3rem;
+  }
+.pro-brief{
+  font-size: .9rem;
+}
   /*====== Footer ======*/
   .footer {
     font-size: 0.7rem;
   }
 }
+
+/* ================= Media Query for 370px ================= */
 
 @media (max-width: 370px) {
   .jtag img {
