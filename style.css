@@ -34,18 +34,21 @@ body a {
   border-bottom: 5px solid #300dbb;
   z-index: 99;
 }
+
 .logo {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.7rem;
   font-weight: bold;
 }
+
 .navbar a {
   color: #ffffff;
   margin-left: 50px;
   font-weight: bold;
   font-size: 1.2rem;
 }
+
 .navbar a:hover {
   cursor: pointer;
   background-image: linear-gradient(to bottom right, blue, violet);
@@ -53,6 +56,7 @@ body a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 #menu-icon {
   color: white;
   font-size: 2rem;
@@ -67,7 +71,7 @@ body a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: var(--black);
+  background-color: black;
   gap: 5%;
   padding: 6.3% 0%;
 }
@@ -130,7 +134,9 @@ body a {
 .linkedin-button:hover,
 .github-button:hover {
   cursor: pointer;
-  box-shadow: 0.2px 0px 15px #8131ea90;
+  background-image: linear-gradient(to bottom right, blue, violet);
+  color: white;
+  border: 2px solid darkviolet;
   transform: translateY(-2px);
 }
 
@@ -139,11 +145,6 @@ body a {
 .about {
   height: auto;
   background-color: black;
-}
-
-.about-title {
-  padding-top: 70px;
-  text-align: center;
 }
 
 .sub-title {
@@ -171,7 +172,6 @@ body a {
   border-radius: 20px;
   margin: 12% 0% 5% 0%;
   background-color: #ffffff07;
-  /*  border: 3px solid rgba(128, 128, 128, 0.171); */
   box-shadow: 1px 1px 2px #ffffff2b, -1px -1px 2px #ffffff2b;
   color: white;
   display: grid;
@@ -238,10 +238,12 @@ body a {
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.9rem;
 }
+
 hr {
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 20px;
 }
+
 .edu {
   padding: 10px 0px;
 }
@@ -354,12 +356,7 @@ hr {
   font-size: 3rem;
   color: white;
   text-align: center;
-}
-
-.project-title h1 {
-  padding-top: 70px;
-  text-align: center;
-  color: white;
+  padding-top: 80px;
 }
 
 .project-column {
@@ -374,72 +371,79 @@ hr {
 }
 
 .column {
-  width: 370px;
-  height: 450px;
+  width: 330px;
+  height: 435px;
   margin: 15px;
-  flex-basis: 320px;
-  background-color: rgba(255, 255, 255, 0.05);
-  box-shadow: inset 0.1px 0.1px 5px rgba(255, 255, 255, 0.308);
   border: none;
+  box-shadow: inset .5px .5px 7px #ffffff7c;
   border-radius: 20px;
-  padding: 13px;
   display: grid;
-  grid-template-rows: 300px repeat(4, autofit);
-  grid-template-columns: auto;
-  transition: all 0.3s ease;
+  grid-template-rows: repeat(5, auto);
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
+
 .column:hover {
-  transform: translateY(-15px);
+  transform: translateY(-5px);
 }
 
-.project-image img {
-  border-radius: 10px;
+.project-image {
+  width: 330px;
+  height: auto;
   border: none;
+  border-radius: 15px 15px 0px 0px;
 }
 
-.project-heading {
-  color: white;
-  padding: 3px 0px;
-  font-size: 1.3rem;
+.pro-title {
+  font-size: 1.5rem;
+  margin: 3px 15px;
 }
 
-.project-about {
+.pro-brief {
   color: #a3a3a3;
   text-align: justify;
-  padding: 3px 0px;
+  margin: 3px 15px;
 }
 
 .skills-tab {
-  margin: 7px 0px;
+  margin: 3px 15px;
 }
 
 .skills-tab span {
-  margin: 0px 5px 0px 0px;
-  padding: 4px 5px;
-  background-image: linear-gradient(to bottom, #0f7970, #27d56a);
-  color: white;
-  font-size: 0.8rem;
-  font-weight: 500;
-  border: none;
+  margin-right: 5px;
+  padding: 3px 7px;
+  font-size: .8rem;
+  font-weight: bold;
+  background-image: linear-gradient(to bottom right, red, rgb(255, 0, 106));
   border-radius: 5px;
 }
 
 .view-links {
+  margin: 5px 0px;
   display: flex;
-  gap: 15px;
+  flex-direction: row;
   justify-content: center;
-  margin: 5px 0px 0px 0px;
+  gap: 12px;
 }
 
 .view-links button {
-  padding: 5px 42px;
-  background-color: #ffffff;
-  color: black;
-  font-size: 0.9rem;
-  border: none;
-  border-radius: 5px;
+  padding: 5px 30px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border: 2px solid #8080803b;
+  border-radius: 12px;
   font-weight: bold;
   cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.view-links button:hover {
+  background-image: linear-gradient(to bottom right, blue, violet);
+  color: white;
+  border: 2px solid darkviolet;
+  transform: translateY(-5px);
+
 }
 
 /*=== Contact Me ===*/
@@ -535,10 +539,9 @@ hr {
 input,
 textarea {
   background-color: #000000;
-  border: 1px solid grey;
+  border: 2px solid #8080803b;
   color: white;
   border-radius: 5px;
-  resize: none;
   outline: none;
 }
 
@@ -552,23 +555,26 @@ textarea {
   margin: 10px 0px;
   padding: 5px 20px;
   font-size: 1rem;
+  border: 2px solid #8080803b;
+  border-radius: 12px;
+  font-weight: bold;
   color: white;
   background-color: #000000;
-  border: 1px solid rgb(128, 128, 128);
-  border-radius: 5px;
   cursor: pointer;
+  transition: all .2s ease-in-out;
 }
 
 .submitbtn:hover {
-  color: black;
-  background-color: white;
-  border: 2px solid black;
+  background-image: linear-gradient(to bottom right, blue, violet);
+  color: white;
+  border: 2px solid darkviolet;
+  transform: translateY(-5px);
 }
 
 /* ===Footer=== */
 
 footer {
-  background-color: #300dbb;
+  background-image: linear-gradient(to bottom right, blue, rgb(149, 30, 204));
   padding: 7px 0px;
   color: white;
   text-align: center;
@@ -581,15 +587,15 @@ footer {
   #menu-icon {
     display: block;
   }
+
   .header {
-    background-image: linear-gradient(
-      to bottom right,
-      #0505a7,
-      rgb(134, 7, 188)
-    );
+    background-image: linear-gradient(to bottom right,
+        #0505a7,
+        rgb(134, 7, 188));
     border-bottom: none;
     padding: 10px 30px;
   }
+
   .navbar {
     position: absolute;
     display: none;
@@ -599,15 +605,18 @@ footer {
     padding: 10px 35px;
     background-color: white;
   }
+
   .navbar a {
     display: block;
     margin: 20px 0px;
     text-align: right;
     color: black;
   }
+
   .navbar.active {
     display: block;
   }
+
   .navbar a:active {
     color: #a3a3a3;
   }
@@ -616,11 +625,13 @@ footer {
 /* ================= Media Query for 450px ================= */
 
 @media (max-width: 450px) {
+
   /*====== Home  ======*/
   .intro {
     flex-basis: 700px;
     margin: 60px 30px 0px 30px;
   }
+
   .greet {
     font-size: 2rem;
     color: transparent;
@@ -631,39 +642,47 @@ footer {
     font-size: 2.7rem;
     margin-bottom: 10px;
   }
+
   .note,
   .role {
     font-size: 1rem;
     text-align: justify;
     margin-bottom: 30px;
   }
+
   .linkedin-button,
   .github-button,
   .resume-button {
     padding: 7px 12px;
     font-size: 1rem;
   }
+
   /*====== About =======*/
-  
+
   .availstatus {
     padding: 5px 5px 5px 15px;
     font-size: 1.1rem;
     line-height: 1.7;
   }
-.count-sub-section h2{
-  font-size: 1.5rem;
-}
+
+  .count-sub-section h2 {
+    font-size: 1.5rem;
+  }
+
   .deg {
     font-size: 1.12rem;
   }
+
   .class,
   .h3,
   .act-list {
     font-size: 1rem;
   }
+
   .mark {
     font-size: 1.12rem;
   }
+
   .aboutme-right {
     margin: 2% 4% 2% 4%;
   }
@@ -672,10 +691,11 @@ footer {
   .tech {
     height: 80px;
   }
+
   .tech p {
     padding: 2px 40px;
   }
-  
+
   .s-note,
   .ab-note {
     font-size: 1rem;
@@ -686,27 +706,34 @@ footer {
   .h1 {
     font-size: 2rem;
   }
+
   .sub-title {
     font-size: 0.7rem;
   }
+
   .h2 {
     font-size: 1.3rem;
   }
+
   .contact-links {
     font-size: 1rem;
   }
+
   .col-left,
   .col-right {
     margin: 7px 5px;
     padding: 10px 10px;
   }
+
   .label {
     font-size: 1rem;
     width: 50px;
   }
+
   .user-input {
     width: 250px;
   }
+
   .submitbtn {
     font-size: 1rem;
   }
@@ -716,6 +743,7 @@ footer {
     font-size: 0.7rem;
   }
 }
+
 @media (max-width: 370px) {
   .jtag img {
     padding: 0px 30px;
