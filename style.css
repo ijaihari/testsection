@@ -21,6 +21,23 @@ body a {
   text-decoration: none;
 }
 
+/* ====== Common classes ======*/
+
+
+.h1 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.sub-title {
+  padding: 10px 10px;
+  font-size: 1rem;
+  text-align: center;
+  color: orange;
+}
+
 /* === Navigation Bar === */
 .header {
   position: fixed;
@@ -145,13 +162,6 @@ body a {
 .about {
   height: auto;
   background-color: black;
-}
-
-.sub-title {
-  padding: 10px 0px;
-  font-size: 1rem;
-  text-align: center;
-  color: orange;
 }
 
 .about-container {
@@ -293,13 +303,6 @@ hr {
   padding: 10px;
 }
 
-.sub-title {
-  padding: 10px 10px;
-  font-size: 1rem;
-  text-align: center;
-  color: orange;
-}
-
 .skills-list {
   width: auto;
   margin: 2% 7%;
@@ -350,12 +353,6 @@ hr {
   background-color: black;
 }
 
-.h1 {
-  font-size: 3rem;
-  color: white;
-  text-align: center;
-  padding-top: 80px;
-}
 
 .project-column {
   margin: 10px 10px 0px 10px;
@@ -445,6 +442,77 @@ hr {
 
 }
 
+/* ======  Achievements ====== */
+
+.certifi-container {
+  background-color: black;
+  height: fit-content;
+  padding: 10px;
+}
+
+.certificates {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+
+}
+
+.c-container {
+  width: 330px;
+  height: fit-content;
+  margin: 10px 0px;
+  padding-bottom: 10px;
+  border: none;
+  box-shadow: inset .5px .5px 7px #ffffff7c;
+  border-radius: 20px;
+
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+}
+
+.c-image {
+  width: 330px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.c-title {
+  font-size: 1.23rem;
+  margin: 3px 10px;
+  color: white;
+}
+
+.c-about {
+  font-size: 1rem;
+  margin: 3px 10px;
+  color: grey;
+  text-align: justify;
+}
+
+.outcome {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.link{
+  margin: 3px 10px;
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border: 2px solid #8080803b;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.link:hover{
+  background-image: linear-gradient(to bottom right, blue, violet);
+  color: white;
+  border: 2px solid darkviolet;
+  transform: translateX(5px);
+}
 /*=== Contact Me ===*/
 
 .contact {
@@ -457,13 +525,6 @@ hr {
   padding: 70px 0px 0px 0px;
   text-align: center;
   color: white;
-}
-
-.sub-title {
-  padding: 10px 10px;
-  font-size: 1rem;
-  text-align: center;
-  color: orange;
 }
 
 .col-contact {
@@ -737,13 +798,16 @@ footer {
   .submitbtn {
     font-size: 1rem;
   }
+
   /*====== Projects ======*/
-  .pro-title{
+  .pro-title {
     font-size: 1.3rem;
   }
-.pro-brief{
-  font-size: .9rem;
-}
+
+  .pro-brief {
+    font-size: .9rem;
+  }
+
   /*====== Footer ======*/
   .footer {
     font-size: 0.7rem;
