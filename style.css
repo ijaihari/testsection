@@ -180,22 +180,22 @@ body a {
 .profile-left {
   height: fit-content;
   border-radius: 20px;
-  margin: 12% 0% 5% 0%;
-  background-color: #ffffff07;
-  box-shadow: 1px 1px 2px #ffffff2b, -1px -1px 2px #ffffff2b;
+  margin: 12% 0% 2% 0%;
+  background-color: black;
+  box-shadow: inset 1px 1px 7px #ffffff35;
   color: white;
   display: grid;
   grid-template-columns: 80px 1fr;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 7px;
 }
 
 .aboutme-right {
-  flex-basis: 600px;
+  flex-basis: 610px;
   height: fit-content;
   padding: 1%;
-  margin: 2% 0% 2% 12%;
+  margin: 1% 0% 1% 12%;
 }
 
 .aboutme-right h2 {
@@ -226,10 +226,11 @@ body a {
 
 .count-section {
   width: 350px;
-  background-image: linear-gradient(to bottom, #11998e, #38ef7d);
+  box-shadow: inset 1px 1px 7px #ffffff0f;
+  background-image: linear-gradient(to bottom, #0c0a0a, rgb(15, 15, 15) );
   border-radius: 20px;
   margin: 2% 0%;
-  padding: 20px 10px;
+  padding: 18px 10px;
   display: flex;
   justify-content: space-around;
 }
@@ -246,12 +247,39 @@ body a {
 
 .count-sub-section p {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
-hr {
+.proline {
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 20px;
+}
+
+.whatido {
+  background-image: linear-gradient(to bottom right,#c4051c,#EA384D);
+  border-radius: 20px;
+  height: 260px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
+.do-title {
+  text-align: center;
+  color: white;
+  padding: 7px;
+}
+
+.doline {
+  border: 1px dotted white;
+}
+
+.whatido ul {
+  padding: 10px 20px;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1rem;
+  font-weight: 500;
+  color: whitesmoke;
 }
 
 .edu {
@@ -353,7 +381,6 @@ hr {
   background-color: black;
 }
 
-
 .project-column {
   margin: 10px 10px 0px 10px;
   height: auto;
@@ -431,15 +458,12 @@ hr {
   border-radius: 12px;
   font-weight: bold;
   cursor: pointer;
-  transition: all .2s ease-in-out;
 }
 
 .view-links button:hover {
   background-image: linear-gradient(to bottom right, blue, violet);
   color: white;
   border: 2px solid darkviolet;
-  transform: translateY(-5px);
-
 }
 
 /* ======  Achievements ====== */
@@ -472,7 +496,8 @@ hr {
   grid-template-rows: repeat(5, auto);
   transition: all .2s ease-in-out;
 }
-.c-container:hover{
+
+.c-container:hover {
   transform: scale(1.05);
 }
 
@@ -494,16 +519,17 @@ hr {
   margin: 3px 10px;
   color: grey;
   text-align: justify;
-  
+
 }
 
 .outcome {
   color: white;
   font-size: 1.1rem;
   font-weight: bold;
-  
+
 }
-.link{
+
+.link {
   margin: 3px 10px;
   padding: 5px 10px;
   background-color: black;
@@ -513,15 +539,14 @@ hr {
   border-radius: 12px;
   font-weight: bold;
   cursor: pointer;
-  transition: all .2s ease-in-out;
-  
 }
-.link:hover{
+
+.link:hover {
   background-image: linear-gradient(to bottom right, blue, violet);
   color: white;
   border: 2px solid darkviolet;
-  transform: translateX(5px);
 }
+
 /*=== Contact Me ===*/
 
 .contact {
@@ -659,10 +684,8 @@ footer {
   }
 
   .header {
-    background-image: linear-gradient(to bottom right,
-        #0505a7,
-        rgb(134, 7, 188));
-    border-bottom: none;
+    background-image: linear-gradient(to bottom right, black, rgb(23, 22, 22));
+    border-bottom: 3px solid rgb(71, 31, 249);
     padding: 10px 30px;
   }
 
