@@ -1,3 +1,4 @@
+/* Menu */
 const menuIcon = document.querySelector("#menu-icon");
 const navbar = document.querySelector(".navbar");
 const navbg = document.querySelector(".navbg");
@@ -7,11 +8,9 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("active");
   navbg.classList.toggle("active");
 });
-/* Submit button */
-const submitbtn = document.querySelector(".submitbtn");
-submitbtn.addEventListener("click",()=>{alert("Your mail is reached me soon i will get back to you")})
+
 /* Footer Section */
 let year = new Date();
 year = year.getFullYear();
 const footer = document.querySelector(".footer");
-footer.innerHTML = `Created by Jai Hari Nataraj | &copy; ${year} All rights received`;
+footer.innerHTML = `Created by Jai Hari Nataraj | &copy; ${year} All rights received.`;

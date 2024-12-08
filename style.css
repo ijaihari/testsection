@@ -9,13 +9,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-:root {
-  /* === Font Color === */
-  --grey: #b4b4b4;
-  --white: #e3e2df;
-  --red: #ff0000;
-  --black: #000000;
-}
+
 
 body a {
   text-decoration: none;
@@ -544,7 +538,7 @@ body a {
 
 .link:hover {
   background-image: linear-gradient(to bottom right, blue, violet);
-  color: white;
+  color: whitesmoke;
   border: 2px solid darkviolet;
 }
 
@@ -597,8 +591,10 @@ body a {
   border-radius: 10px;
   margin: 5px 5px 5px 0px;
 }
-
-.social .fa-linkedin-square:hover {
+.social i:hover{
+  background-image: linear-gradient(to bottom right, rgb(0, 68, 255), violet);
+}
+/* .social .fa-linkedin-square:hover {
   color: #036eb0;
   background-color: white;
 }
@@ -606,7 +602,7 @@ body a {
 .social .fa-github:hover {
   color: darkviolet;
   background-color: white;
-}
+} */
 
 .contact-list,
 .contact-links {
