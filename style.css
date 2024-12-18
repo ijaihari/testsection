@@ -1,3 +1,9 @@
+/*==== Robo ====*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+/*==== Space Grotesk ====*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -23,6 +29,7 @@ body a {
   color: white;
   text-align: center;
   padding-top: 80px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .sub-title {
@@ -30,6 +37,7 @@ body a {
   font-size: 1rem;
   text-align: center;
   color: orange;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 /* === Navigation Bar === */
@@ -51,6 +59,7 @@ body a {
   color: #ffffff;
   font-size: 1.7rem;
   font-weight: bold;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .navbar a {
@@ -102,6 +111,7 @@ body a {
   margin-bottom: 0.5%;
   color: transparent;
   -webkit-text-stroke: 0.7px white;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .name {
@@ -117,12 +127,14 @@ body a {
   font-size: 1.3rem;
   color: white;
   margin-bottom: 1%;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .note {
   font-size: 1.1rem;
   margin-bottom: 5%;
   color: grey;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .intro button {
@@ -140,6 +152,7 @@ body a {
   background-color: #000000;
   border: 2px solid rgba(128, 128, 128, 0.149);
   transition: all 0.2s ease-in-out;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .resume-button:hover,
@@ -199,6 +212,7 @@ body a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .proimg img {
@@ -210,23 +224,26 @@ body a {
   padding: 5px 5px 5px 15px;
   font-size: 1.2rem;
   line-height: 1.7;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .now {
   padding: 2px 7px;
-  border-radius: 5px;
-  background-color: #00ff66bd;
+  border-radius: 25px;
+  border: 2px solid #1ddb1d80;
+  background-color: #00ff8834;
   color: white;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .count-section {
-  width: 350px;
   box-shadow: inset 1px 1px 7px #ffffff0f;
-  background-image: linear-gradient(to bottom, #0c0a0a, rgb(15, 15, 15));
+  background-image: linear-gradient(to bottom, #0c0a0a, #0f0f0f);
   border-radius: 20px;
   margin: 2% 0%;
   padding: 18px 10px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -238,20 +255,24 @@ body a {
 .count-sub-section h2 {
   font-size: 1.7rem;
   color: white;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .count-sub-section p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.8rem;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .proline {
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid #ffffff2b;
   border-radius: 20px;
 }
 
+
 .whatido {
-  background-image: linear-gradient(to bottom right, #c4051c, #EA384D);
+  border: 2px solid #ff000080;
+  background-color: #ff000034;
   border-radius: 20px;
   height: 260px;
   padding: 10px 15px;
@@ -262,6 +283,7 @@ body a {
   text-align: center;
   color: white;
   padding: 7px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .doline {
@@ -271,7 +293,7 @@ body a {
 .whatido ul {
   padding: 10px 20px;
   text-align: justify;
-  line-height: 1.8;
+  line-height: 1.5;
   font-size: 1rem;
   font-weight: 500;
   color: whitesmoke;
@@ -286,6 +308,7 @@ body a {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 10px 0px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .class {
@@ -301,6 +324,7 @@ body a {
   -webkit-text-fill-color: transparent;
   border-radius: 8px;
   font-size: 1.5rem;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .college-activities {
@@ -316,6 +340,7 @@ body a {
   font-size: 1.3rem;
   padding: 5px 0px;
   color: white;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 /*=== Skills Section ===*/
@@ -357,9 +382,10 @@ body a {
   padding: 10px 15px;
 }
 
-.s-note {
+.s-note strong {
   font-size: 1.3rem;
   color: white;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .tech p {
@@ -404,6 +430,46 @@ body a {
   transform: scale(1.05);
 }
 
+.align-pro {
+  display: grid;
+  justify-content: center;
+}
+
+.pro-list {
+  width: 700px;
+  border: 2px solid #4169e180;
+  background-color: #4169e141;
+  border-radius: 20px;
+  margin: 2% 0%;
+  padding: 18px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.procount h2{
+  font-size: 2rem;
+  color:white;
+  font-family: "Space Grotesk", sans-serif;
+}
+.procount p{
+  font-size: 0.8rem;
+  color: royalblue;
+  font-weight: 500;
+}
+.prohrline {
+  border: 1px solid #4169e141;
+  border-radius: 20px;
+}
+
+.procount {
+  font-size: 1rem;
+  flex-basis: 0px 200px;
+  color: white;
+  padding: 0px 40px;
+  text-align: center;
+}
+
 .project-image {
   width: 330px;
   height: auto;
@@ -414,6 +480,7 @@ body a {
 .pro-title {
   font-size: 1.5rem;
   margin: 3px 15px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .pro-brief {
@@ -453,6 +520,7 @@ body a {
   border-radius: 12px;
   font-weight: bold;
   cursor: pointer;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .view-links button:hover {
@@ -507,6 +575,7 @@ body a {
   font-size: 1.23rem;
   margin: 3px 10px;
   color: white;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .c-about {
@@ -534,6 +603,7 @@ body a {
   border-radius: 12px;
   font-weight: bold;
   cursor: pointer;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .link:hover {
@@ -573,6 +643,7 @@ body a {
 
 .label {
   color: white;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .h2 {
@@ -582,6 +653,7 @@ body a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .social i {
@@ -591,9 +663,11 @@ body a {
   border-radius: 10px;
   margin: 5px 5px 5px 0px;
 }
-.social i:hover{
+
+.social i:hover {
   background-image: linear-gradient(to bottom right, rgb(0, 68, 255), violet);
 }
+
 /* .social .fa-linkedin-square:hover {
   color: #036eb0;
   background-color: white;
@@ -610,6 +684,7 @@ body a {
   font-size: 1.3rem;
   padding: 0px 0px 10px 0px;
   color: white;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .label {
@@ -617,6 +692,7 @@ body a {
   padding: 5px 0px;
   font-size: 1.3rem;
   display: inline-block;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .user-input {
@@ -625,6 +701,7 @@ body a {
   margin: 5px 0px;
   padding: 3px 5px;
   outline: none;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 input,
@@ -635,12 +712,14 @@ textarea {
   border-radius: 5px;
   outline: none;
   resize: none;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .txtarea {
   padding: 10px 0px 0px 10px;
   width: 305px;
   height: 120px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .submitbtn {
@@ -653,6 +732,7 @@ textarea {
   color: white;
   background-color: #000000;
   cursor: pointer;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .submitbtn:hover {
@@ -663,13 +743,15 @@ textarea {
 
 /* ===Footer=== */
 
-footer {
+.footer {
+  font-family: "Space Grotesk", sans-serif;
   background-image: linear-gradient(to bottom right, blue, rgb(149, 30, 204));
   padding: 7px 0px;
   color: white;
   text-align: center;
   font-weight: bold;
 }
+
 
 /* ================= Media Query for 950px ================= */
 
@@ -710,9 +792,41 @@ footer {
   }
 }
 
+/* ================= Media Query for 768px ================= */
+
+@media (max-width: 768px) {
+  .pro-list {
+    width: 500px;
+  }
+
+  .procount {
+    font-size: 0.9rem;
+    flex-basis: 0px 200px;
+    padding: 10px 10px;
+  }
+
+}
+
+/* ================= Media Query for 590px ================= */
+
+@media (max-width:590px) {
+  .pro-list {
+    width: 300px;
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .procount {
+    flex-basis: 0px 100px;
+    padding: 20px 0px;
+  }
+
+}
+
 /* ================= Media Query for 450px ================= */
 
-@media (max-width: 450px) {
+@media (max-width: 490px) {
+  
 
   /*====== Home  ======*/
   .intro {
@@ -843,9 +957,17 @@ footer {
 
 /* ================= Media Query for 370px ================= */
 
-@media (max-width: 370px) {
+@media (max-width: 380px) {
   .jtag img {
     padding: 0px 30px;
     height: 280px;
+  }
+
+  .s-note strong {
+    font-size: 0.9rem;
+  }
+
+  .ab-note {
+    font-size: .9rem;
   }
 }
