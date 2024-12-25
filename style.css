@@ -15,14 +15,11 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-
-
 body a {
   text-decoration: none;
 }
 
 /* ====== Common classes ======*/
-
 
 .h1 {
   font-size: 3rem;
@@ -71,10 +68,7 @@ body a {
 
 .navbar a:hover {
   cursor: pointer;
-  background-image: linear-gradient(to bottom right, blue, violet);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color:grey;
 }
 
 #menu-icon {
@@ -353,7 +347,7 @@ body a {
 
 .skills-list {
   width: auto;
-  margin: 2% 7%;
+  margin: 2% 10%;
 }
 
 .tech-top {
@@ -403,20 +397,16 @@ body a {
 }
 
 .project-column {
-  margin: 10px 10px 0px 10px;
-  height: auto;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 330px));
   justify-content: center;
-  gap: 3%;
+  gap: 50px;
+  padding:20px 30px;
 }
 
 .column {
   width: 330px;
   height: 445px;
-  margin: 15px;
   border: none;
   box-shadow: inset .5px .5px 7px #ffffff7c;
   border-radius: 20px;
@@ -447,16 +437,19 @@ body a {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.procount h2{
+
+.procount h2 {
   font-size: 2rem;
-  color:white;
+  color: white;
   font-family: "Space Grotesk", sans-serif;
 }
-.procount p{
+
+.procount p {
   font-size: 0.8rem;
   color: royalblue;
   font-weight: 500;
 }
+
 .prohrline {
   border: 1px solid #4169e141;
   border-radius: 20px;
@@ -478,6 +471,7 @@ body a {
 }
 
 .pro-title {
+  color: white;
   font-size: 1.5rem;
   margin: 3px 15px;
   font-family: "Space Grotesk", sans-serif;
@@ -495,6 +489,7 @@ body a {
 }
 
 .skills-tab span {
+  color: white;
   margin-right: 5px;
   padding: 3px 7px;
   font-size: .8rem;
@@ -533,23 +528,21 @@ body a {
 
 .certifi-container {
   background-color: black;
-  height: fit-content;
+  height: auto;
   padding: 10px;
 }
 
 .certificates {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 330px));
   justify-content: center;
-  gap: 5%;
-
+  gap: 50px;
+  padding:20px 30px;
 }
 
 .c-container {
   width: 330px;
   height: 430px;
-  margin: 10px 0px;
   padding-bottom: 10px;
   border: none;
   box-shadow: inset .5px .5px 7px #ffffff7c;
@@ -790,6 +783,12 @@ textarea {
   .navbar a:active {
     color: #a3a3a3;
   }
+  .certificates {
+    padding:20px 0px;
+  }
+  .project-column {
+    padding:20px 0px;
+  }
 }
 
 /* ================= Media Query for 768px ================= */
@@ -806,6 +805,8 @@ textarea {
   }
 
 }
+
+
 
 /* ================= Media Query for 590px ================= */
 
@@ -826,7 +827,7 @@ textarea {
 /* ================= Media Query for 450px ================= */
 
 @media (max-width: 490px) {
-  
+
 
   /*====== Home  ======*/
   .intro {
@@ -897,10 +898,12 @@ textarea {
   .tech p {
     padding: 2px 40px;
   }
+  .s-note strong {
+    font-size: 0.9rem;
+  }
 
-  .s-note,
   .ab-note {
-    font-size: 1rem;
+    font-size: .9rem;
   }
 
   /*====== Contact ======*/
@@ -961,13 +964,5 @@ textarea {
   .jtag img {
     padding: 0px 30px;
     height: 280px;
-  }
-
-  .s-note strong {
-    font-size: 0.9rem;
-  }
-
-  .ab-note {
-    font-size: .9rem;
   }
 }
