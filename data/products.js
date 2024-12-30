@@ -8,7 +8,7 @@ export const products = [
       stars: 4.5,
       count: 317
     },
-    priceCents: 2400,
+    priceCents: 299,
     keywords: [
       "hoodies",
       "sweaters",
@@ -23,7 +23,7 @@ export const products = [
       stars: 4.5,
       count: 144
     },
-    priceCents: 3599,
+    priceCents: 359,
     keywords: [
       "bathroom",
       "washroom",
@@ -41,7 +41,7 @@ export const products = [
       stars: 4.5,
       count: 305
     },
-    priceCents: 2899,
+    priceCents: 199,
     keywords: [
       "bathroom",
       "cleaning"
@@ -55,7 +55,7 @@ export const products = [
       stars: 4,
       count: 89
     },
-    priceCents: 3390,
+    priceCents: 339,
     keywords: [
       "shoes",
       "running shoes",
@@ -70,7 +70,7 @@ export const products = [
       stars: 4.5,
       count: 235
     },
-    priceCents: 2070,
+    priceCents: 259,
     keywords: [
       "robe",
       "swimsuit",
@@ -89,7 +89,7 @@ export const products = [
       stars: 4.5,
       count: 30
     },
-    priceCents: 1560,
+    priceCents: 1099,
     keywords: [
       "accessories",
       "shades"
@@ -103,7 +103,7 @@ export const products = [
       stars: 4.5,
       count: 562
     },
-    priceCents: 2499,
+    priceCents: 249,
     keywords: [
       "footwear",
       "sandals",
@@ -120,7 +120,7 @@ export const products = [
       stars: 4.5,
       count: 232
     },
-    priceCents: 4599,
+    priceCents: 459,
     keywords: [
       "bedroom",
       "curtains",
@@ -135,7 +135,7 @@ export const products = [
       stars: 4,
       count: 160
     },
-    priceCents: 1699,
+    priceCents: 499,
     keywords: [
       "shorts",
       "apparel",
@@ -150,7 +150,7 @@ export const products = [
       stars: 4.5,
       count: 87
     },
-    priceCents: 1090,
+    priceCents: 189,
     keywords: [
       "socks",
       "sports",
@@ -165,7 +165,7 @@ export const products = [
       stars: 4,
       count: 127
     },
-    priceCents: 2095,
+    priceCents: 699,
     keywords: [
       "sports",
       "basketballs"
@@ -179,7 +179,7 @@ export const products = [
       stars: 4.5,
       count: 56
     },
-    priceCents: 799,
+    priceCents: 299,
     keywords: [
       "tshirts",
       "apparel",
@@ -187,7 +187,7 @@ export const products = [
     ],
     type: "clothing",
     sizeChartLink: "images/clothing-size-chart.png"
-  },
+  }/* ,
   {
     id: "54e0eccd-8f36-462b-b68a-8182611d9add",
     image: "images/products/black-2-slot-toaster.jpg",
@@ -658,5 +658,5 @@ export const products = [
       "apparel",
       "mens"
     ]
-  }
+  } */
 ];

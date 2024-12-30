@@ -1,6 +1,5 @@
 import { cart, removeFromCart, updateDeliveryOption } from '../data/cart.js';
 import { products } from '../data/products.js';
-import { formatCurrency } from './utils/money.js';
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 import { deliveryOptions } from '../data/deliveryoptions.js'
 
@@ -49,7 +48,7 @@ cart.forEach((cartItem) => {
             ${matchingProduct.name}
           </div>
           <div class="product-price">
-            &#8377;${formatCurrency(matchingProduct.priceCents)}
+            &#8377;${matchingProduct.priceCents}
           </div>
           <div class="product-quantity">
             <span>
@@ -81,7 +80,7 @@ function deliveryOptionsHTML(matchingProduct, cartItem) {
     const today = dayjs();
     const deliveryDate = today.add(deliveryOption.deliveryDays, 'days');
     const dateString = deliveryDate.format('dddd, MMMM D');
-    const priceString = deliveryOption.priceCents === 0 ? 'Free' : `$${formatCurrency(deliveryOption.priceCents)}`;
+    const priceString = deliveryOption.priceCents === 0 ? 'Free' : `$${deliveryOption.priceCents}`;
     const isChecked = deliveryOption.id === cartItem.deliveryOptionId;
 
     html += ` <div class="delivery-option js-delivery-option"
