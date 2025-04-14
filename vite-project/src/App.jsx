@@ -1,7 +1,11 @@
+import FilterBtn from "./components/FilterBtn";
+
 function App() {
-  return (  
+  
+  return (
     <div>
-      <h1>Custom Drop Down</h1>
+      <h1>Filter Feature</h1>
+      <FilterBtn />
     </div>
   );
 }
