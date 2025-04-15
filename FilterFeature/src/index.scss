@@ -20,9 +20,9 @@ button {
 
   .filter-container {
     padding: 10px 5px;
-    
+
     border-radius: 1rem;
-    background-color: rgba(103, 210, 240, 0.058);
+    background-color: #67d2f00f;
     border: 2px dotted rgba(0, 0, 0, 0.056);
 
     .btn-filter {
@@ -39,7 +39,8 @@ button {
       &:nth-child(1) {
         background-color: royalblue;
         color: white;
-        &:hover{
+
+        &:hover {
           background-color: rgb(48, 85, 197);
           box-shadow: 0px 0px 10px transparent;
         }
@@ -63,10 +64,56 @@ button {
           background-color: rgba(198, 0, 0, 0.15);
         }
       }
-      
+
 
       &:hover {
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
+
+.dropdown {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #80808041;
+  border-radius: .5rem;
+
+  input {
+    width: 150px;
+    outline: none;
+    padding: 7px 10px;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: .5rem .5rem 0px 0px;
+    border-bottom: 1px solid #80808041;
+   
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+
+    .menu-items {
+      color: black;
+      padding: 6px 0px;
+      border: none;
+      background-color: white;
+       
+      &:hover {
+        color: white;
+        background-color: royalblue;
+
+      }
+      &:last-child{
+       
+        border-radius: 0px 0px .5rem .5rem;
+      }
+      &:last-child:hover{
+        background-color: red;
       }
     }
   }
