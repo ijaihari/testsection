@@ -10,7 +10,6 @@ function DropDown() {
     const filteredSearch = FilterTags.filter(user =>
         user.toLowerCase().includes(searchTerm.toLowerCase())
     );
-    console.log(filteredSearch);
     return (
         <div>
             <section className="dropdown">
