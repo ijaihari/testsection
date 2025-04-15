@@ -19,7 +19,7 @@ function DropDown() {
                     {
                         filteredSearch.length > 0 ?
                             (filteredSearch.map((item, index) =>
-                                (<button onClick={()=> dispatch(addFilter(item))} key={index} className="menu-items">{item}</button>))) :
+                                (<button onClick={() => dispatch(addFilter(item))} key={index} className="menu-items">{item}</button>))) :
                             (<p>No results found</p>)
                     }
 
