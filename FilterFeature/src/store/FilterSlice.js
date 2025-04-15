@@ -1,17 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    value: 0
+    AddedFilter: ['Animals', 'Birds', 'Cats', 'Dogs']
 };
 
 export const FilterSlice = createSlice({
     name: 'filterSlice',
     initialState,
     reducers: {
-        deleteFilter: (state) => { state.value += 1;
-            console.log(state.value)
+        deleteFilter: (state, action) => {
+            state.AddedFilter = state.AddedFilter.filter(item => item !== action.payload);
+            console.log(state.AddedFilter)
         }
-
     },
 });
 export const { deleteFilter } = FilterSlice.actions;
