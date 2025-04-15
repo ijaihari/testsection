@@ -10,7 +10,7 @@ function Filter() {
             <section className="filter-container" >
                 <button className="btn-filter add-filter"><i class="add-i fa-solid fa-plus"></i>Add Filter</button>
                 {
-                    AddedFilter.map((add, index) => <button  key={index} className="btn-filter">{add}<button onClick={() => dispatch(deleteFilter(add))} className="del-filter"><i class="del-i fa-solid fa-xmark"></i></button></button>)
+                    AddedFilter.map((add, index) => <button key={index} className="btn-filter">{add}<button onClick={() => dispatch(deleteFilter(add))} className="del-filter"><i class="del-i fa-solid fa-xmark"></i></button></button>)
                 }
 
             </section>
