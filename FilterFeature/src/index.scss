@@ -13,8 +13,6 @@ button {
   cursor: pointer;
 }
 
-
-
 .filter-section {
   margin: 20px 0px;
 
@@ -65,60 +63,104 @@ button {
         }
       }
 
-
       &:hover {
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
       }
     }
   }
 }
-
+  
 .dropdown {
-  width: fit-content;
-  height: fit-content;
+  width: 300px;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  border: 1px solid #80808041;
-  border-radius: .5rem;
 
   input {
-    width: 150px;
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
     outline: none;
-    padding: 7px 10px;
-    border: 1px solid transparent;
-    background-color: white;
-    border-radius: .5rem .5rem 0px 0px;
-    border-bottom: 1px solid #80808041;
+    background-color: #fafafa;
+    border-radius: 0.75rem 0.75rem 0 0;
 
+    &:focus {
+      background-color: #ffffff;
+    }
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f8f8f8;
+
+    .tab-btn {
+      flex: 1;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      background-color: transparent;
+     
+    }
+
+    .active-tab {
+      background-color: royalblue;
+      color: white;
+      font-weight: 600;
+    }
   }
 
   .menu {
     display: flex;
     flex-direction: column;
-    padding: 0px 0px;
+    max-height: 200px;
+    overflow-y: auto;
 
     .menu-items {
-      font-weight: bold;
-      color: black;
-      padding: 6px 0px;
+      padding: 10px 14px;
+      font-size: 0.9rem;
+      color: #333;
+      background-color: #ffffff;
       border: none;
-      background-color: white;
-      border-bottom: 1px solid #80808041;
-      &:hover {
-        background-color: #80808020;
+      text-align: left;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
 
-      }
-      &:last-child {
-        border-bottom: none;
-        border-radius: 0px 0px .5rem .5rem;
+      &:hover {
+        background-color: #f1f1f1;
       }
     }
+
     p {
-      padding: 10px 0px;
-      color: red;
-      font-weight: bold;
+      padding: 12px;
+      font-size: 0.85rem;
+      color: #e74c3c;
       text-align: center;
-      font-size: .7rem;
+      background-color: #fff0f0;
+      font-weight: 500;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #c2c2c2;
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
     }
   }
 }
