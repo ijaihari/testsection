@@ -2,7 +2,7 @@ export const mockData = [
     {
         creative_id: "CR001",
         creative_name: "Summer Sale Banner",
-        tags: [
+        Tags: [
             "summer",
             "banner",
             "sale"
@@ -11,21 +11,21 @@ export const mockData = [
         ad_network: "Meta",
         os: "iOS",
         campaign: "Summer Splash 2025",
-        ad_group: "US-iOS-Group1",
-        ipm: 3.5,
-        ctr: 1.2,
-        spend: 500,
-        impressions: 100000,
+        Ad_Group: "US-iOS-Group1",
+        IPM: 3.5,
+        CTR: 1.2,
+        Spend: 500,
+        Impressions: 100000,
         clicks: 1200,
         cpm: 5,
-        cost_per_click: 0.42,
+        Cost_Per_Click: 0.42,
         cost_per_install: 1.15,
         installs: 435
     },
     {
         creative_id: "CR002",
         creative_name: "Monsoon Beats Video",
-        tags: [
+        Tags: [
             "video",
             "music",
             "monsoon"
@@ -34,21 +34,21 @@ export const mockData = [
         ad_network: "Google Ads",
         os: "Android",
         campaign: "Monsoon Vibes",
-        ad_group: "IN-Android-Audio",
-        ipm: 4.2,
-        ctr: 1.8,
-        spend: 720,
-        impressions: 120000,
+        Ad_Group: "IN-Android-Audio",
+        IPM: 4.2,
+        CTR: 1.8,
+        Spend: 720,
+        Impressions: 120000,
         clicks: 2160,
         cpm: 6,
-        cost_per_click: 0.33,
+        Cost_Per_Click: 0.33,
         cost_per_install: 0.85,
         installs: 845
     },
     {
         creative_id: "CR003",
         creative_name: "Fitness App Promo",
-        tags: [
+        Tags: [
             "fitness",
             "health",
             "app"
@@ -57,21 +57,21 @@ export const mockData = [
         ad_network: "Meta",
         os: "Android",
         campaign: "FitLife Launch",
-        ad_group: "CA-Android-Fit",
-        ipm: 2.9,
-        ctr: 0.9,
-        spend: 310,
-        impressions: 80000,
+        Ad_Group: "CA-Android-Fit",
+        IPM: 2.9,
+        CTR: 0.9,
+        Spend: 310,
+        Impressions: 80000,
         clicks: 720,
         cpm: 3.87,
-        cost_per_click: 0.43,
+        Cost_Per_Click: 0.43,
         cost_per_install: 1.34,
         installs: 231
     },
     {
         creative_id: "CR004",
         creative_name: "Black Friday Promo",
-        tags: [
+        Tags: [
             "blackfriday",
             "promo",
             "discount"
@@ -80,21 +80,21 @@ export const mockData = [
         ad_network: "Google Ads",
         os: "iOS",
         campaign: "Black Friday UK",
-        ad_group: "UK-iOS-Deals",
-        ipm: 5,
-        ctr: 2.1,
-        spend: 900,
-        impressions: 150000,
+        Ad_Group: "UK-iOS-Deals",
+        IPM: 5,
+        CTR: 2.1,
+        Spend: 900,
+        Impressions: 150000,
         clicks: 3150,
         cpm: 6,
-        cost_per_click: 0.29,
+        Cost_Per_Click: 0.29,
         cost_per_install: 0.95,
         installs: 947
     },
     {
         creative_id: "CR005",
         creative_name: "New Year Countdown",
-        tags: [
+        Tags: [
             "countdown",
             "event",
             "newyear"
@@ -103,21 +103,21 @@ export const mockData = [
         ad_network: "Meta",
         os: "Android",
         campaign: "NY2025",
-        ad_group: "DE-Android-Countdown",
-        ipm: 3.1,
-        ctr: 1,
-        spend: 450,
-        impressions: 90000,
+        Ad_Group: "DE-Android-Countdown",
+        IPM: 3.1,
+        CTR: 1,
+        Spend: 450,
+        Impressions: 90000,
         clicks: 900,
         cpm: 5,
-        cost_per_click: 0.5,
+        Cost_Per_Click: 0.5,
         cost_per_install: 1.2,
         installs: 375
     },
     {
         creative_id: "CR006",
         creative_name: "Flash Deal Reel",
-        tags: [
+        Tags: [
             "flash",
             "deal",
             "reel"
@@ -126,21 +126,21 @@ export const mockData = [
         ad_network: "Meta",
         os: "iOS",
         campaign: "Flash USA",
-        ad_group: "US-iOS-Flash",
-        ipm: 4.5,
-        ctr: 1.7,
-        spend: 620,
-        impressions: 110000,
+        Ad_Group: "US-iOS-Flash",
+        IPM: 4.5,
+        CTR: 1.7,
+        Spend: 620,
+        Impressions: 110000,
         clicks: 1870,
         cpm: 5.63,
-        cost_per_click: 0.33,
+        Cost_Per_Click: 0.33,
         cost_per_install: 0.97,
         installs: 640
     },
     {
         creative_id: "CR007",
         creative_name: "Gaming Ad - BattleZone",
-        tags: [
+        Tags: [
             "gaming",
             "trailer",
             "battle"
@@ -149,21 +149,21 @@ export const mockData = [
         ad_network: "Google Ads",
         os: "Android",
         campaign: "BattleZone Launch",
-        ad_group: "JP-Android-Gamers",
-        ipm: 6.1,
-        ctr: 2.5,
-        spend: 1000,
-        impressions: 130000,
+        Ad_Group: "JP-Android-Gamers",
+        IPM: 6.1,
+        CTR: 2.5,
+        Spend: 1000,
+        Impressions: 130000,
         clicks: 3250,
         cpm: 7.69,
-        cost_per_click: 0.31,
+        Cost_Per_Click: 0.31,
         cost_per_install: 0.89,
         installs: 1124
     },
     {
         creative_id: "CR008",
         creative_name: "Food Delivery Promo",
-        tags: [
+        Tags: [
             "food",
             "delivery",
             "discount"
@@ -172,21 +172,21 @@ export const mockData = [
         ad_network: "Meta",
         os: "iOS",
         campaign: "French Feast",
-        ad_group: "FR-iOS-Meal",
-        ipm: 2.8,
-        ctr: 0.8,
-        spend: 270,
-        impressions: 60000,
+        Ad_Group: "FR-iOS-Meal",
+        IPM: 2.8,
+        CTR: 0.8,
+        Spend: 270,
+        Impressions: 60000,
         clicks: 480,
         cpm: 4.5,
-        cost_per_click: 0.56,
+        Cost_Per_Click: 0.56,
         cost_per_install: 1.38,
         installs: 195
     },
     {
         creative_id: "CR009",
         creative_name: "E-Learning App Ad",
-        tags: [
+        Tags: [
             "education",
             "app",
             "learning"
@@ -195,21 +195,21 @@ export const mockData = [
         ad_network: "Google Ads",
         os: "Android",
         campaign: "LearnPro India",
-        ad_group: "IN-Android-Edu",
-        ipm: 4,
-        ctr: 1.5,
-        spend: 500,
-        impressions: 100000,
+        Ad_Group: "IN-Android-Edu",
+        IPM: 4,
+        CTR: 1.5,
+        Spend: 500,
+        Impressions: 100000,
         clicks: 1500,
         cpm: 5,
-        cost_per_click: 0.33,
+        Cost_Per_Click: 0.33,
         cost_per_install: 0.8,
         installs: 625
     },
     {
         creative_id: "CR010",
         creative_name: "Crypto Wallet Ad",
-        tags: [
+        Tags: [
             "finance",
             "crypto",
             "wallet"
@@ -218,21 +218,21 @@ export const mockData = [
         ad_network: "Meta",
         os: "iOS",
         campaign: "CryptoTrust SG",
-        ad_group: "SG-iOS-Fintech",
-        ipm: 3.9,
-        ctr: 1.4,
-        spend: 720,
-        impressions: 105000,
+        Ad_Group: "SG-iOS-Fintech",
+        IPM: 3.9,
+        CTR: 1.4,
+        Spend: 720,
+        Impressions: 105000,
         clicks: 1470,
         cpm: 6.86,
-        cost_per_click: 0.49,
+        Cost_Per_Click: 0.49,
         cost_per_install: 1.05,
         installs: 410
     },
     /* {
         creative_id: "CR011",
         creative_name: "Fitness Power Ad",
-        tags: [
+        Tags: [
             "fitness",
             "health",
             "app"
@@ -241,21 +241,21 @@ export const mockData = [
         ad_network: "Google Ads",
         os: "Android",
         campaign: "FitTrack Pro",
-        ad_group: "CA-Android-Health",
-        ipm: 4.1,
-        ctr: 1.7,
-        spend: 650,
-        impressions: 95000,
+        Ad_Group: "CA-Android-Health",
+        IPM: 4.1,
+        CTR: 1.7,
+        Spend: 650,
+        Impressions: 95000,
         clicks: 1615,
         cpm: 6.84,
-        cost_per_click: 0.4,
+        Cost_Per_Click: 0.4,
         cost_per_install: 1.05,
         installs: 620
     },
     {
         creative_id: "CR012",
         creative_name: "Crypto Vault Campaign",
-        tags: [
+        Tags: [
             "crypto",
             "wallet",
             "finance"
@@ -264,21 +264,21 @@ export const mockData = [
         ad_network: "Meta",
         os: "iOS",
         campaign: "VaultSecure",
-        ad_group: "DE-iOS-Crypto",
-        ipm: 3.6,
-        ctr: 1.5,
-        spend: 780,
-        impressions: 110000,
+        Ad_Group: "DE-iOS-Crypto",
+        IPM: 3.6,
+        CTR: 1.5,
+        Spend: 780,
+        Impressions: 110000,
         clicks: 1650,
         cpm: 7.09,
-        cost_per_click: 0.47,
+        Cost_Per_Click: 0.47,
         cost_per_install: 1.18,
         installs: 495
     },
     {
         creative_id: "CR013",
         creative_name: "Music Monsoon Beats",
-        tags: [
+        Tags: [
             "music",
             "monsoon",
             "video"
@@ -287,21 +287,21 @@ export const mockData = [
         ad_network: "Google Ads",
         os: "Android",
         campaign: "Monsoon Melodies",
-        ad_group: "IN-Android-Music",
-        ipm: 4.3,
-        ctr: 2,
-        spend: 690,
-        impressions: 115000,
+        Ad_Group: "IN-Android-Music",
+        IPM: 4.3,
+        CTR: 2,
+        Spend: 690,
+        Impressions: 115000,
         clicks: 2300,
         cpm: 6,
-        cost_per_click: 0.3,
+        Cost_Per_Click: 0.3,
         cost_per_install: 0.82,
         installs: 860
     },
     {
         creative_id: "CR014",
         creative_name: "Black Friday Blitz",
-        tags: [
+        Tags: [
             "blackfriday",
             "discount",
             "promo"
@@ -310,21 +310,21 @@ export const mockData = [
         ad_network: "Meta",
         os: "iOS",
         campaign: "Friday Frenzy",
-        ad_group: "UK-iOS-Deals",
-        ipm: 5.4,
-        ctr: 2.3,
-        spend: 880,
-        impressions: 140000,
+        Ad_Group: "UK-iOS-Deals",
+        IPM: 5.4,
+        CTR: 2.3,
+        Spend: 880,
+        Impressions: 140000,
         clicks: 3220,
         cpm: 6.29,
-        cost_per_click: 0.27,
+        Cost_Per_Click: 0.27,
         cost_per_install: 0.91,
         installs: 970
     },
     {
         creative_id: "CR015",
         creative_name: "Year-End Countdown",
-        tags: [
+        Tags: [
             "countdown",
             "event",
             "newyear"
@@ -333,21 +333,21 @@ export const mockData = [
         ad_network: "Google Ads",
         os: "Android",
         campaign: "NY Countdown",
-        ad_group: "AU-Android-NewYear",
-        ipm: 3.2,
-        ctr: 1,
-        spend: 490,
-        impressions: 88000,
+        Ad_Group: "AU-Android-NewYear",
+        IPM: 3.2,
+        CTR: 1,
+        Spend: 490,
+        Impressions: 88000,
         clicks: 880,
         cpm: 5.57,
-        cost_per_click: 0.56,
+        Cost_Per_Click: 0.56,
         cost_per_install: 1.19,
         installs: 410
     },
     {
         creative_id: "CR016",
         creative_name: "Flash Frenzy Reel",
-        tags: [
+        Tags: [
             "flash",
             "deal",
             "reel"
@@ -356,21 +356,21 @@ export const mockData = [
         ad_network: "Meta",
         os: "iOS",
         campaign: "Flash Deals 2025",
-        ad_group: "US-iOS-Flash",
-        ipm: 4.7,
-        ctr: 1.6,
-        spend: 630,
-        impressions: 108000,
+        Ad_Group: "US-iOS-Flash",
+        IPM: 4.7,
+        CTR: 1.6,
+        Spend: 630,
+        Impressions: 108000,
         clicks: 1728,
         cpm: 5.83,
-        cost_per_click: 0.36,
+        Cost_Per_Click: 0.36,
         cost_per_install: 1,
         installs: 630
     },
     {
         creative_id: "CR017",
         creative_name: "BattleZone Reloaded",
-        tags: [
+        Tags: [
             "gaming",
             "battle",
             "trailer"
@@ -379,21 +379,21 @@ export const mockData = [
         ad_network: "Google Ads",
         os: "Android",
         campaign: "BattleZone X",
-        ad_group: "JP-Android-Games",
-        ipm: 6.3,
-        ctr: 2.6,
-        spend: 1020,
-        impressions: 134000,
+        Ad_Group: "JP-Android-Games",
+        IPM: 6.3,
+        CTR: 2.6,
+        Spend: 1020,
+        Impressions: 134000,
         clicks: 3484,
         cpm: 7.61,
-        cost_per_click: 0.29,
+        Cost_Per_Click: 0.29,
         cost_per_install: 0.86,
         installs: 1185
     },
     {
         creative_id: "CR018",
         creative_name: "Food Express Launch",
-        tags: [
+        Tags: [
             "food",
             "delivery",
             "discount"
@@ -402,21 +402,21 @@ export const mockData = [
         ad_network: "Meta",
         os: "iOS",
         campaign: "Feast24",
-        ad_group: "FR-iOS-Food",
-        ipm: 2.7,
-        ctr: 0.9,
-        spend: 260,
-        impressions: 58000,
+        Ad_Group: "FR-iOS-Food",
+        IPM: 2.7,
+        CTR: 0.9,
+        Spend: 260,
+        Impressions: 58000,
         clicks: 522,
         cpm: 4.48,
-        cost_per_click: 0.5,
+        Cost_Per_Click: 0.5,
         cost_per_install: 1.35,
         installs: 193
     },
     {
         creative_id: "CR019",
         creative_name: "E-Learn Kickstart",
-        tags: [
+        Tags: [
             "education",
             "app",
             "learning"
@@ -425,21 +425,21 @@ export const mockData = [
         ad_network: "Google Ads",
         os: "Android",
         campaign: "LearnLite",
-        ad_group: "IN-Android-Learn",
-        ipm: 3.8,
-        ctr: 1.3,
-        spend: 540,
-        impressions: 97000,
+        Ad_Group: "IN-Android-Learn",
+        IPM: 3.8,
+        CTR: 1.3,
+        Spend: 540,
+        Impressions: 97000,
         clicks: 1261,
         cpm: 5.57,
-        cost_per_click: 0.43,
+        Cost_Per_Click: 0.43,
         cost_per_install: 0.95,
         installs: 570
     },
     {
         creative_id: "CR020",
         creative_name: "Banner Bonanza",
-        tags: [
+        Tags: [
             "summer",
             "banner",
             "sale"
@@ -448,21 +448,21 @@ export const mockData = [
         ad_network: "Meta",
         os: "Android",
         campaign: "SunSaver 2025",
-        ad_group: "US-Android-Summer",
-        ipm: 3.6,
-        ctr: 1.1,
-        spend: 470,
-        impressions: 94000,
+        Ad_Group: "US-Android-Summer",
+        IPM: 3.6,
+        CTR: 1.1,
+        Spend: 470,
+        Impressions: 94000,
         clicks: 1034,
         cpm: 5,
-        cost_per_click: 0.45,
+        Cost_Per_Click: 0.45,
         cost_per_install: 1.1,
         installs: 426
     },
     {
         creative_id: "CR021",
         creative_name: "Wellness Burst",
-        tags: [
+        Tags: [
             "health",
             "fitness",
             "app"
@@ -471,21 +471,21 @@ export const mockData = [
         ad_network: "Google Ads",
         os: "Android",
         campaign: "FitWave 2025",
-        ad_group: "AU-Android-Health1",
-        ipm: 4,
-        ctr: 1.4,
-        spend: 600,
-        impressions: 90000,
+        Ad_Group: "AU-Android-Health1",
+        IPM: 4,
+        CTR: 1.4,
+        Spend: 600,
+        Impressions: 90000,
         clicks: 1260,
         cpm: 6.67,
-        cost_per_click: 0.48,
+        Cost_Per_Click: 0.48,
         cost_per_install: 1.22,
         installs: 492
     },
     {
         creative_id: "CR022",
         creative_name: "Crypto Start Promo",
-        tags: [
+        Tags: [
             "wallet",
             "crypto",
             "finance"
@@ -494,21 +494,21 @@ export const mockData = [
         ad_network: "Meta",
         os: "iOS",
         campaign: "ChainBoost 2025",
-        ad_group: "SG-iOS-Crypto",
-        ipm: 3.9,
-        ctr: 1.6,
-        spend: 720,
-        impressions: 110000,
+        Ad_Group: "SG-iOS-Crypto",
+        IPM: 3.9,
+        CTR: 1.6,
+        Spend: 720,
+        Impressions: 110000,
         clicks: 1760,
         cpm: 6.55,
-        cost_per_click: 0.41,
+        Cost_Per_Click: 0.41,
         cost_per_install: 1.08,
         installs: 520
     },
     {
         creative_id: "CR023",
         creative_name: "Video Vibe Festival",
-        tags: [
+        Tags: [
             "video",
             "music",
             "event"
@@ -517,21 +517,21 @@ export const mockData = [
         ad_network: "Google Ads",
         os: "Android",
         campaign: "VibeFest",
-        ad_group: "CA-Android-Music",
-        ipm: 4.2,
-        ctr: 1.9,
-        spend: 680,
-        impressions: 97000,
+        Ad_Group: "CA-Android-Music",
+        IPM: 4.2,
+        CTR: 1.9,
+        Spend: 680,
+        Impressions: 97000,
         clicks: 1843,
         cpm: 7.01,
-        cost_per_click: 0.37,
+        Cost_Per_Click: 0.37,
         cost_per_install: 0.91,
         installs: 746
     },
     {
         creative_id: "CR024",
         creative_name: "Promo Blitz Friday",
-        tags: [
+        Tags: [
             "blackfriday",
             "deal",
             "discount"
@@ -540,21 +540,21 @@ export const mockData = [
         ad_network: "Meta",
         os: "Android",
         campaign: "DealDrop",
-        ad_group: "UK-Android-BF",
-        ipm: 5,
-        ctr: 2.1,
-        spend: 900,
-        impressions: 145000,
+        Ad_Group: "UK-Android-BF",
+        IPM: 5,
+        CTR: 2.1,
+        Spend: 900,
+        Impressions: 145000,
         clicks: 3045,
         cpm: 6.21,
-        cost_per_click: 0.3,
+        Cost_Per_Click: 0.3,
         cost_per_install: 0.97,
         installs: 930
     },
     {
         creative_id: "CR025",
         creative_name: "Monsoon Munchies",
-        tags: [
+        Tags: [
             "monsoon",
             "food",
             "delivery"
@@ -563,21 +563,21 @@ export const mockData = [
         ad_network: "Google Ads",
         os: "Android",
         campaign: "RainBite",
-        ad_group: "IN-Android-Food1",
-        ipm: 3.3,
-        ctr: 1.1,
-        spend: 540,
-        impressions: 87000,
+        Ad_Group: "IN-Android-Food1",
+        IPM: 3.3,
+        CTR: 1.1,
+        Spend: 540,
+        Impressions: 87000,
         clicks: 957,
         cpm: 6.21,
-        cost_per_click: 0.56,
+        Cost_Per_Click: 0.56,
         cost_per_install: 1.33,
         installs: 405
     },
     {
         creative_id: "CR026",
         creative_name: "FlashWin Gaming Ad",
-        tags: [
+        Tags: [
             "flash",
             "gaming",
             "reel"
@@ -586,21 +586,21 @@ export const mockData = [
         ad_network: "Meta",
         os: "iOS",
         campaign: "ArcadeRush",
-        ad_group: "PH-iOS-Gaming",
-        ipm: 4.8,
-        ctr: 2.2,
-        spend: 790,
-        impressions: 112000,
+        Ad_Group: "PH-iOS-Gaming",
+        IPM: 4.8,
+        CTR: 2.2,
+        Spend: 790,
+        Impressions: 112000,
         clicks: 2464,
         cpm: 7.05,
-        cost_per_click: 0.32,
+        Cost_Per_Click: 0.32,
         cost_per_install: 0.88,
         installs: 900
     },
     {
         creative_id: "CR027",
         creative_name: "NewYear Countdown Ad",
-        tags: [
+        Tags: [
             "newyear",
             "countdown",
             "promo"
@@ -609,21 +609,21 @@ export const mockData = [
         ad_network: "Google Ads",
         os: "Android",
         campaign: "2026 Countdown",
-        ad_group: "SA-Android-Holiday",
-        ipm: 3.7,
-        ctr: 1.3,
-        spend: 430,
-        impressions: 86000,
+        Ad_Group: "SA-Android-Holiday",
+        IPM: 3.7,
+        CTR: 1.3,
+        Spend: 430,
+        Impressions: 86000,
         clicks: 1118,
         cpm: 5,
-        cost_per_click: 0.38,
+        Cost_Per_Click: 0.38,
         cost_per_install: 1.12,
         installs: 384
     },
     {
         creative_id: "CR028",
         creative_name: "EduApp Back to School",
-        tags: [
+        Tags: [
             "education",
             "learning",
             "app"
@@ -632,21 +632,21 @@ export const mockData = [
         ad_network: "Meta",
         os: "iOS",
         campaign: "ClassReady",
-        ad_group: "BR-iOS-Education",
-        ipm: 4.5,
-        ctr: 1.8,
-        spend: 640,
-        impressions: 102000,
+        Ad_Group: "BR-iOS-Education",
+        IPM: 4.5,
+        CTR: 1.8,
+        Spend: 640,
+        Impressions: 102000,
         clicks: 1836,
         cpm: 6.27,
-        cost_per_click: 0.35,
+        Cost_Per_Click: 0.35,
         cost_per_install: 0.92,
         installs: 700
     },
     {
         creative_id: "CR029",
         creative_name: "Game Trailer Blitz",
-        tags: [
+        Tags: [
             "gaming",
             "trailer",
             "battle"
@@ -655,21 +655,21 @@ export const mockData = [
         ad_network: "Google Ads",
         os: "Android",
         campaign: "WarFront 3",
-        ad_group: "KR-Android-Game",
-        ipm: 6,
-        ctr: 2.4,
-        spend: 980,
-        impressions: 136000,
+        Ad_Group: "KR-Android-Game",
+        IPM: 6,
+        CTR: 2.4,
+        Spend: 980,
+        Impressions: 136000,
         clicks: 3264,
         cpm: 7.21,
-        cost_per_click: 0.3,
+        Cost_Per_Click: 0.3,
         cost_per_install: 0.89,
         installs: 1100
     },
     {
         creative_id: "CR030",
         creative_name: "Hot Summer Splash",
-        tags: [
+        Tags: [
             "summer",
             "banner",
             "event"
@@ -678,14 +678,14 @@ export const mockData = [
         ad_network: "Meta",
         os: "iOS",
         campaign: "HeatWave Bash",
-        ad_group: "US-iOS-Summer2",
-        ipm: 3.9,
-        ctr: 1.2,
-        spend: 510,
-        impressions: 98000,
+        Ad_Group: "US-iOS-Summer2",
+        IPM: 3.9,
+        CTR: 1.2,
+        Spend: 510,
+        Impressions: 98000,
         clicks: 1176,
         cpm: 5.2,
-        cost_per_click: 0.43,
+        Cost_Per_Click: 0.43,
         cost_per_install: 1.14,
         installs: 446
     } */

@@ -21,14 +21,15 @@ function Filter() {
 
                 {AddedFilter.map((add, index) => (
                     <button key={index} className="btn-filter">
-                        {add.componentName}: {add.value}
-                        <button
+                        {add.value}
+                        <span
                             onClick={() => dispatch(deleteFilter(add))}
                             className="del-filter"
                         >
                             <i className="del-i fa-solid fa-xmark"></i>
-                        </button>
+                        </span>
                     </button>
+
                 ))}
             </section>
 

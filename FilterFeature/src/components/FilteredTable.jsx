@@ -2,19 +2,24 @@ import { useSelector } from "react-redux";
 
 function FilteredTable() {
     const { mockData, AddedFilter } = useSelector(state => state.filter);
-
+    console.log(AddedFilter);
+    
     // Create a mapping from component names to selected values
     const filterMap = {};
     AddedFilter.forEach(({ componentName, value }) => {
         filterMap[componentName] = value;
     });
+    console.log(filterMap)
 
     // Filter logic
     const filteredData = AddedFilter.length === 0
         ? mockData // No filter, show everything
         : mockData.filter(item =>
             Object.entries(filterMap).every(([key, val]) => {
-                // Ensure item matches all selected filters
+                if (key === 'Tags') {
+                    // Check if any of the selected tags are present in the item
+                    return item[key].some(tag => val.includes(tag)); // Matching any tag
+                }
                 return item[key] === val;
             })
         );
@@ -35,7 +40,9 @@ function FilteredTable() {
                         {filteredData.map((row, rowIndex) => (
                             <tr key={rowIndex}>
                                 {Object.values(row).map((value, colIndex) => (
-                                    <td key={colIndex}>{value}</td>
+                                    <td key={colIndex}>
+                                        {Array.isArray(value) ? value.join(", ") : value}
+                                    </td>
                                 ))}
                             </tr>
                         ))}
