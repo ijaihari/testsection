@@ -5,16 +5,19 @@ function FilteredTable() {
     console.log(AddedFilter);
 
     // Create a mapping from component names to selected values
-    const filterMap = {};
-    AddedFilter.forEach(({ componentName, value }) => {
-        filterMap[componentName] = value;
-    });
-    console.log(filterMap)
+
+    /*  const filterMap = {};
+     AddedFilter.forEach(({ componentName, value }) => {
+         filterMap[componentName] = value;
+     });
+     console.log(filterMap) */
 
     // Filter logic
     const filteredData = AddedFilter.length === 0
         ? mockData // No filter, show everything
-        : mockData.filter(item =>
+        : mockData
+
+        /* mockData.filter(item =>
             Object.entries(filterMap).every(([key, val]) => {
                 if (key === 'Tags') {
                     // Check if any of the selected tags are present in the item
@@ -22,7 +25,7 @@ function FilteredTable() {
                 }
                 return item[key] === val;
             })
-        );
+        ) */;
 
     return (
         <div className="table-container">
@@ -47,9 +50,10 @@ function FilteredTable() {
                             <th>CPM</th>
                             <th>CPC</th>
                             <th>CPI</th>
-                            <th>Installs</th> 
+                            <th>Installs</th>
                         </tr>
                     </thead>
+
                     <tbody>
                         {filteredData.map((row, rowIndex) => (
                             <tr key={rowIndex}>

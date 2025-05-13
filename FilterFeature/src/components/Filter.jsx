@@ -19,7 +19,7 @@ function Filter() {
                 </button>
 
                 {AddedFilter.map((add, index) => (
-                    <button key={index} className="btn-filter">
+                    <button key={index} className="btn-filter" >
                         {add.value}
                         <span
                             onClick={() => dispatch(deleteFilter(add))}

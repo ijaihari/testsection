@@ -57,7 +57,7 @@ main {
       font-size: .9rem;
       font-weight: bold;
       color: black;
-      background-color: #ffffff22;
+      background-color: #ffffff;
       padding: 10px 15px;
       border: 1px solid #80808047;
       border-radius: .5rem;
@@ -85,7 +85,8 @@ main {
         border: none;
         border-radius: 1rem;
         width: fit-content;
-        background-color: rgba(145, 144, 144, 0.2);
+        background-color: transparent;
+        color: rgb(128, 128, 128);
 
         &:hover {
           color: red;
@@ -120,8 +121,7 @@ main {
 
 .dropdown {
   width: 320px;
-  background-color: #ffffff62;
-  backdrop-filter: blur(5px);
+  background-color: #ffffff;
   border-radius: 0.75rem;
   border: 1px solid #0000004b;
   overflow: hidden;
@@ -138,7 +138,7 @@ main {
     padding: 10px 14px;
     font-size: 1rem;
     background-color: #ffffff22;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     border: none;
     border-bottom: 1px solid #0000005d;
     outline: none;
@@ -148,8 +148,7 @@ main {
   .tabs {
     display: flex;
     justify-content: space-between;
-    background-color: #ffffff22;
-    backdrop-filter: blur(5px);
+    background-color: #ffffff;
 
     .tab-btn {
       flex: 1;
@@ -160,13 +159,13 @@ main {
       border: none;
       cursor: pointer;
       background-color: transparent;
+      border-right: 1px solid #0000005d;
       border-bottom: 1px solid #0000005d;
     }
 
     .active-tab {
-      background-color: #000000e6;
+      background-color: #000000e5;
       color: white;
-      font-weight: 600;
     }
   }
 
@@ -180,7 +179,7 @@ main {
       padding: 10px 14px;
       font-size: 1rem;
       color: black;
-      background-color: #ffffffa9;
+      background-color: #ffffff;
       border: none;
       text-align: left;
       cursor: pointer;
@@ -192,17 +191,16 @@ main {
       }
 
       &:hover {
-        background-color: #ffffff;
+        background-color: rgba(65, 105, 225, 0.2);
       }
     }
 
     p {
       padding: 12px;
-      font-size: 0.8rem;
+      font-size: 1rem;
       color: #e74c3c;
       text-align: center;
-      background-color: #ffffff62;
-      backdrop-filter: blur(5px);
+      background-color: #ffffff;
       font-weight: 500;
     }
 
@@ -222,8 +220,7 @@ main {
 }
 
 .menu-back-button {
-  background-color: #ffffff62;
-  backdrop-filter: blur(5px);
+  background-color: #ffffff;
   color: black;
   border: none;
   font-size: 1rem;
@@ -237,23 +234,24 @@ main {
 }
 
 .table-title {
+  margin-top: 1rem;
   font-size: 2rem;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .table-container {
   font-size: .75rem;
-  margin-top: 1rem;
+
   overflow-x: auto;
 }
 
 th {
-  font-size: 1rem;
+  font-size: .8rem;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 td {
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .data-table {
@@ -265,12 +263,13 @@ td {
 .data-table th,
 .data-table td {
   padding: 5px 6px;
-  border: 1px solid black;
-  text-align: left;
+  border: 1px solid rgba(128, 128, 128, 0.51);
+  text-align: center;
 }
 
 .data-table th {
   color: white;
-  background-color: #000000e6;
+  background-color: rgba(0, 0, 0, 0.888);
   font-weight: bold;
+  border: none;
 }
