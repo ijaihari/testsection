@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { deleteFilter, toogleDropDown } from "../store/FilterSlice";
+import { deleteFilter, toogleDropDown, clearAllFilters } from "../store/FilterSlice";
 import DropDown from "./DropDown";
 
 function Filter() {
@@ -9,8 +9,7 @@ function Filter() {
 
     return (
         <div className="filter-section">
-            <h1>Filter Feature</h1>
-
+            
             <section className="filter-container">
                 <button
                     onClick={() => dispatch(toogleDropDown())}
@@ -31,6 +30,7 @@ function Filter() {
                     </button>
 
                 ))}
+                <button className="clear-filter-btn" onClick={() => dispatch(clearAllFilters())}>Clear</button>
             </section>
 
             {DropStatus && <DropDown />}

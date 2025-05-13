@@ -123,7 +123,7 @@ export const FilterSlice = createSlice({
     },
 });
 
-export const { deleteFilter, toogleDropDown, addFilter } = FilterSlice.actions;
+export const { deleteFilter, toogleDropDown, addFilter, clearAllFilters } = FilterSlice.actions;
 export const FilterReducer = FilterSlice.reducer;
 
 

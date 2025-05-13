@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 function FilteredTable() {
     const { mockData, AddedFilter } = useSelector(state => state.filter);
     console.log(AddedFilter);
-    
+
     // Create a mapping from component names to selected values
     const filterMap = {};
     AddedFilter.forEach(({ componentName, value }) => {
@@ -26,14 +26,28 @@ function FilteredTable() {
 
     return (
         <div className="table-container">
-            <h2 className="table-title">Filtered Data</h2>
+            <h2 className="table-title">Insight Table</h2>
             {filteredData.length > 0 ? (
                 <table className="data-table">
                     <thead>
                         <tr>
-                            {Object.keys(filteredData[0]).map((key) => (
-                                <th key={key}>{key}</th>
-                            ))}
+                            <th>Creative ID</th>
+                            <th>Creative Name</th>
+                            <th>Tags</th>
+                            <th>Country</th>
+                            <th>Ad Network</th>
+                            <th>OS</th>
+                            <th>Campaign</th>
+                            <th>Ad Group</th>
+                            <th>IPM</th>
+                            <th>CTR</th>
+                            <th>Spend</th>
+                            <th>Impressions</th>
+                            <th>Clicks</th>
+                            <th>CPM</th>
+                            <th>CPC</th>
+                            <th>CPI</th>
+                            <th>Installs</th> 
                         </tr>
                     </thead>
                     <tbody>

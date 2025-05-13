@@ -1,10 +1,14 @@
 import Filter from "./components/Filter";
 import FilteredTable from "./components/FilteredTable";
+import Header from "./components/Header";
 function App() {
   return (
     <div>
-      <Filter />
-      <FilteredTable/>
+     {/*  <Header /> */}
+      <main>
+        <Filter />
+        <FilteredTable />
+      </main>
     </div>
   );
 
