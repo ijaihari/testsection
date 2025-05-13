@@ -86,6 +86,7 @@ const initialState = {
     Metrics: ['Cost per Install (CPI)', 'Installs per Thousand Impressions (IPM)', 'Click Through Rate (CTR)', 'Cost Per Thousand Impressions (CPM)', 'Cost Per Click (CPC)'],
     AddedFilter: [],
     dropStatus: false,
+     activeTab: 'Components', 
     mockData,
 };
 

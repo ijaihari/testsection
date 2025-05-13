@@ -40,7 +40,7 @@ function MenuList({ activeTab, searchTerm }) {
                         onClick={() => handleComponentClick(component)}
                         className="menu-items"
                     >
-                        {component.name}
+                        {component.name} {/* Render component name as string */}
                     </button>
                 ))
             ) : (
@@ -56,10 +56,14 @@ function MenuList({ activeTab, searchTerm }) {
                 filtered.map((item, index) => (
                     <button
                         key={index}
-                        onClick={() => dispatch(addFilter(item))}
+                        onClick={() => {
+                            // Dispatching the filter with componentName and value
+                            console.log("Dispatching:", { componentName: activeTab, value: item });
+                            dispatch(addFilter({ componentName: activeTab, value: item }));
+                        }}
                         className="menu-items"
                     >
-                        {item}
+                        {item} {/* Render item as string */}
                     </button>
                 ))
             ) : (
@@ -76,16 +80,19 @@ function MenuList({ activeTab, searchTerm }) {
         return (
             <>
                 <button onClick={handleBack} className="menu-back-button">
-                    <i class="fa-solid fa-arrow-left"></i> Back
+                    <i className="fa-solid fa-arrow-left"></i> Back
                 </button>
                 {filteredOptions.length > 0 ? (
                     filteredOptions.map((option, index) => (
                         <button
                             key={index}
-                            onClick={() => dispatch(addFilter(option))}
+                            onClick={() => {
+                                console.log("Dispatching:", { componentName: activeTab, value: option });
+                                dispatch(addFilter({ componentName: activeTab, value: option }));
+                            }}
                             className="menu-items"
                         >
-                            {option}
+                            {option} {/* Render option as string */}
                         </button>
                     ))
                 ) : (
