@@ -18,29 +18,28 @@ button {
 
   .filter-container {
     padding: 10px 5px;
-
     border-radius: 1rem;
-    background-color: #67d2f00f;
-    border: 2px dotted rgba(0, 0, 0, 0.056);
+    background-color: #87dff720;
+    border: 1px dotted rgba(128, 128, 128, 0.43);
 
     .btn-filter {
       margin: 0px 0px 0px 5px;
-      font-size: 1rem;
+      font-size: .9rem;
       font-weight: bold;
       color: black;
       background-color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 1rem;
-      box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.195);
+      padding: 9px 10px;
+      border: 1px solid #80808047;
+      border-radius: .5rem;
 
       &:nth-child(1) {
         background-color: royalblue;
         color: white;
+        border: none;
 
         &:hover {
           background-color: rgb(48, 85, 197);
-          box-shadow: 0px 0px 10px transparent;
+          box-shadow: 0px 0px .08px transparent;
         }
       }
 
@@ -64,7 +63,7 @@ button {
       }
 
       &:hover {
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
       }
     }
   }
@@ -74,7 +73,7 @@ button {
   width: 300px;
   background-color: #ffffff;
   border-radius: 0.75rem;
-  border: 3px solid rgba(0, 0, 0, 0.148);
+  border: 1px solid #0000004b;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -82,13 +81,14 @@ button {
   z-index: 99;
   margin-top: -8px;
   margin-left: 10px;
+  box-shadow: 1px 1px 10px #8383832d;
 
   input {
     width: 100%;
     padding: 10px 14px;
     font-size: 0.95rem;
     border: none;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #000000e6;
     outline: none;
     background-color: #fafafa;
     border-radius: 0.75rem 0.75rem 0 0;
@@ -101,7 +101,7 @@ button {
   .tabs {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
 
     .tab-btn {
       flex: 1;
@@ -112,11 +112,11 @@ button {
       border: none;
       cursor: pointer;
       background-color: transparent;
-      border-bottom: 1px solid #e0e0e0;
+      border-bottom: 1px solid #000000e6;
     }
 
     .active-tab {
-      background-color: rgba(0, 0, 0, 0.847);
+      background-color: #000000e6;
       color: white;
       font-weight: 600;
     }
@@ -158,7 +158,7 @@ button {
     }
 
     &::-webkit-scrollbar {
-      width: 6px;
+      width: 4px;
     }
 
     &::-webkit-scrollbar-thumb {
@@ -197,7 +197,7 @@ button {
 .data-table {
   margin-top: 1rem;
   width: 100%;
-  border-collapse: collapse; 
+  border-collapse: collapse;
 }
 
 .data-table th,
@@ -209,6 +209,6 @@ button {
 
 .data-table th {
   color: white;
-  background-color: rgba(0, 0, 0, 0.868);
+  background-color: #000000e6;
   font-weight: bold;
 }

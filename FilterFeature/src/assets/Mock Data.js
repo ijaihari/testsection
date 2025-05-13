@@ -229,7 +229,7 @@ export const mockData = [
         cost_per_install: 1.05,
         installs: 410
     },
-    /* {
+    {
         creative_id: "CR011",
         creative_name: "Fitness Power Ad",
         Tags: [
@@ -688,5 +688,5 @@ export const mockData = [
         Cost_Per_Click: 0.43,
         cost_per_install: 1.14,
         installs: 446
-    } */
+    }
 ]
