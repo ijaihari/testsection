@@ -1,7 +1,60 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { mockData } from "../assets/Mock Data";
 
 const initialState = {
-    Components: ['Ad Network', 'Ad Group', 'Campaign', 'OS'],
+    Components: [
+        {
+            name: "Ad Network",
+            options: [
+                "Meta",
+                "Google Ads",
+            ]
+        },
+        {
+            name: "Ad Group",
+            options: [
+                "US-iOS-Group1",
+                "IN-Android-Audio",
+                "CA-Android-Fit",
+                "UK-iOS-Deals",
+                "DE-Android-Countdown",
+
+                "US-iOS-Flash",
+                "JP-Android-Gamers",
+                "FR-iOS-Meal",
+                "IN-Android-Edu",
+                "SG-iOS-Fintech"
+            ]
+        },
+        {
+            name: "Campaign",
+            options: [
+                "CryptoTrust SG",
+                "LearnPro India",
+                "French Feast",
+                "BattleZone Launch",
+                "Flash USA",
+
+                "NY2025",
+                "Black Friday UK",
+                "FitLife Launch",
+                "Monsoon Vibes",
+                "Summer Splash 2025"
+            ]
+        },
+        {
+            name: "OS",
+            options: [
+                "iOS",
+                "Android",
+                "Windows",
+                "macOS",
+                "Linux",
+                "HarmonyOS",
+                "Fire OS"
+            ]
+        }
+    ],
     Tags: ["app",
         "banner",
         "battle",
@@ -33,6 +86,7 @@ const initialState = {
     Metrics: ['Cost per Install (CPI)', 'Installs per Thousand Impressions (IPM)', 'Click Through Rate (CTR)', 'Cost Per Thousand Impressions (CPM)', 'Cost Per Click (CPC)'],
     AddedFilter: [],
     dropStatus: false,
+    mockData,
 };
 
 export const FilterSlice = createSlice({
@@ -43,12 +97,25 @@ export const FilterSlice = createSlice({
             state.dropStatus = !state.dropStatus
         },
         deleteFilter: (state, action) => {
-            state.AddedFilter = state.AddedFilter.filter(item => item !== action.payload);
-        },
+            const { componentName, value } = action.payload;
+            state.AddedFilter = state.AddedFilter.filter(
+                item => !(item.componentName === componentName && item.value === value)
+            );
+        }
+        ,
         addFilter: (state, action) => {
-            state.AddedFilter.push(action.payload);
-            state.dropStatus = !state.dropStatus
-        },
+            const { componentName, value } = action.payload;
+
+            const isAlreadyAdded = state.AddedFilter.some(
+                (item) => item.componentName === componentName && item.value === value
+            );
+            if (!isAlreadyAdded) {
+                state.AddedFilter.push({ componentName, value });
+            }
+
+            state.dropStatus = false;
+        }
+        ,
         clearAllFilters: (state) => {
             state.AddedFilter = [];
         },

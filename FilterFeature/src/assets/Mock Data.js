@@ -1,4 +1,4 @@
-const mockData = [
+export const mockData = [
     {
         creative_id: "CR001",
         creative_name: "Summer Sale Banner",
@@ -229,7 +229,7 @@ const mockData = [
         cost_per_install: 1.05,
         installs: 410
     },
-    {
+    /* {
         creative_id: "CR011",
         creative_name: "Fitness Power Ad",
         tags: [
@@ -688,5 +688,5 @@ const mockData = [
         cost_per_click: 0.43,
         cost_per_install: 1.14,
         installs: 446
-    }
+    } */
 ]
